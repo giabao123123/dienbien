@@ -1,0 +1,3535 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Điện Biên</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="logo điện biên/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://giabao123123.github.io/webcon/web%20con.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style></style>
+  </head>
+  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
+    <a href="#hero" class="scroll-top-button">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <aside id="backToTop">
+      <a href="#hero" aria-label="Lên đầu trang">
+        <span class="arrow arrow-1"></span>
+        <span class="arrow arrow-2"></span>
+      </a>
+    </aside>
+
+    <aside class="box w3-right neon-box2" style="margin-top: 2%">
+      <p class="text">Chào mừng đến với tỉnh Điện Biên!</p>
+    </aside>
+
+    <header class="w3-top">
+      <nav class="w3-bar w3-white w3-padding w3-card">
+        <a href="#home" class="w3-bar-item neon-box">Điện Biên</a>
+        <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
+          ❮
+        </button>
+        <button class="scroll-btn right-btn w3-hide-small w3-hide-medium">
+          ❯
+        </button>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fffaf0;
+          "
+          class="menu w3-right w3-button"
+          id="menu-list"
+        >
+          <li><a href="#about">LỊCH SỬ HÌNH THÀNH</a></li>
+          <li><a href="#menu">ĐỊA LÝ</a></li>
+          <li><a href="#khihau">KHÍ HẬU</a></li>
+          <li><a href="#DIEUKIENTUNHIEN">ĐIỀU KIỆN TỰ NHIÊN</a></li>
+          <li>
+            <a href="#THOITIET">DỰ BÁO THỜI TIẾT TRONG TỈNH</a>
+          </li>
+          <li><a href="#contact">DÂN CƯ</a></li>
+          <li><a href="#VANHOA">VĂN HOÁ</a></li>
+          <li><a href="#DITICH">DI TÍCH, DI SẢN VĂN HOÁ</a></li>
+          <li><a href="#GIAODUC">GIÁO DỤC</a></li>
+          <li><a href="#KINHTE">KINH TẾ</a></li>
+          <li><a href="#AMTHUC">ẨM THỰC</a></li>
+          <li><a href="#DULICH">DU LỊCH</a></li>
+          <li><a href="#tiemnang">TIỀM NĂNG PHÁT TRIÊN</a></li>
+          <li>
+            <a href="https://giabao123123.github.io/trochoidienbien/"
+              >TRÒ CHƠI</a
+            >
+          </li>
+        </ul>
+        <script>
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+        </script>
+
+        <nav
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fff3cd;
+          "
+          class="w3-animate-left w3-hide-small neon-box"
+        >
+          <div class="menu-scroll">
+            <a href="#about" class="w3-bar-item w3-button"
+              >LỊCH SỬ HÌNH THÀNH</a
+            >
+            <a href="#menu" class="w3-bar-item w3-button">ĐỊA LÝ</a>
+            <a href="#DIEUKIENTUNHIEN" class="w3-bar-item w3-button"
+              >ĐIỀU KIỆN TỰ NHIÊN</a
+            >
+            <a href="#khihau" class="w3-bar-item w3-button">KHÍ HẬU</a>
+            <a href="#THOITIET" class="w3-bar-item w3-button"
+              >DỰ BÁO THỜI TIẾT TRONG TỈNH</a
+            >
+            <a href="#contact" class="w3-bar-item w3-button">DÂN CƯ</a>
+            <a href="#VANHOA" class="w3-bar-item w3-button">VĂN HOÁ</a>
+            <a href="#DITICH" class="w3-bar-item w3-button"
+              >DI TÍCH, DI SẢN VĂN HOÁ</a
+            >
+            <a href="#GIAODUC" class="w3-bar-item w3-button">GIÁO DỤC</a>
+            <a href="#KINHTE" class="w3-bar-item w3-button">KINH TẾ</a>
+            <a href="#AMTHUC" class="w3-bar-item w3-button">ẨM THỰC</a>
+            <a href="#DULICH" class="w3-bar-item w3-button">DU LỊCH</a>
+            <a href="#tiemnang" class="w3-bar-item w3-button"
+              >TIỀM NĂNG PHÁT TRIÊN</a
+            >
+            <a
+              href="https://giabao123123.github.io/trochoidienbien/"
+              class="w3-bar-item w3-button"
+              >TRÒ CHƠI</a
+            >
+          </div>
+        </nav>
+      </nav>
+
+      <script>
+        const menuScroll = document.querySelector(".menu-scroll");
+        const btnLeft = document.querySelector(".left-btn");
+        const btnRight = document.querySelector(".right-btn");
+        const step = 200;
+        if (btnRight && btnLeft && menuScroll) {
+          btnRight.addEventListener("click", () => {
+            menuScroll.scrollLeft += step;
+          });
+          btnLeft.addEventListener("click", () => {
+            menuScroll.scrollLeft -= step;
+          });
+        }
+      </script>
+    </header>
+
+    <main class="w3-content" style="max-width: 1100px">
+      <section class="w3-row w3-padding-16 w3-animate-left" id="about">
+        <h1 class="w3-center" style="color: red; font-size: 35px">
+          LỊCH SỬ HÌNH THÀNH
+        </h1>
+        <article>
+          <p>
+            <strong><mark>Thời kỳ cổ đại</mark></strong>
+          </p>
+          <p>
+            Vào thế kỷ <u>6–7</u>, tại vùng Vân Nam (Trung Quốc), quốc gia Nam
+            Chiếu ra đời, thường xuyên xảy ra xung đột với các tộc người lân
+            cận, khiến khu vực Nam Trung Quốc và Bắc Đông Dương trở nên bất ổn.
+            Trong thời gian này, đất Mường Thanh cũng trải qua nhiều biến động
+            lớn. Đến thế kỷ <u>9–10</u>, người Lự tại Mường Thanh phát triển
+            mạnh mẽ, mở rộng ảnh hưởng sang các khu vực lân cận như Sìn Hồ,
+            Mường Lay, Tuần Giáo. Đến thế kỷ <u>11–12</u>, người Tày Đăm (Thái
+            đen) theo dòng di cư từ Mường Ôm và Mường Ai tràn xuống chiếm Mường
+            Lò (Nghĩa Lộ), sau đó mở rộng sang Than Uyên, Văn Bàn và chiếm giữ
+            một vùng rộng lớn từ Mường Lò qua Mường La (Sơn La) đến Mường Thanh
+            (Điện Biên).
+          </p>
+          <p>
+            <strong><mark>Thời kỳ Bắc thuộc</mark></strong>
+          </p>
+          <p>
+            Trong thời kỳ Bắc thuộc, vùng đất Điện Biên thuộc huyện Lâm Tây,
+            quận Tân Hưng. Thời Lý, đất Điện Biên nằm trong hạt châu Lâm Tây;
+            sang thời Trần, Điện Biên thuộc lộ Đà Giang và cuối thời Trần là
+            trấn Thiên Hưng. Dưới thời Minh, khu vực này được chia thành hai
+            châu là Gia Hưng và Quy Hoá. Năm <u>1463</u>, trấn Hưng Hóa được
+            thành lập với ba phủ Quý Hóa, Gia Hưng và An Tây, nhưng các thủ lĩnh
+            người Lự vẫn nắm quyền kiểm soát Mường Thanh. Sau năm <u>1466</u>,
+            Lê Thánh Tông thiết lập 12 thừa tuyên, trong đó Hưng Hóa bao gồm 3
+            phủ, 4 huyện và 17 châu. Đến năm <u>1831</u>, vua Minh Mạng đổi trấn
+            Hưng Hóa thành tỉnh Hưng Hóa, đặt tỉnh lị tại thị trấn Hưng Hóa (nay
+            thuộc Phú Thọ).
+          </p>
+          <p>
+            <strong><mark>Thời Pháp thuộc</mark></strong>
+          </p>
+          <p>
+            Trong thời kỳ Pháp thuộc, Hưng Hóa bị chia thành nhiều tỉnh như Hòa
+            Bình, Sơn La, Lai Châu, Lào Cai và Yên Bái. Năm <u>1890</u>, thực
+            dân Pháp mới thiết lập ách cai trị tại Lai Châu (bao gồm cả Điện
+            Biên). Ngày <u>28/6/1909</u>, Toàn quyền Đông Dương ra nghị định
+            thành lập tỉnh Lai Châu, nay là Điện Biên và Lai Châu. Trong thời
+            gian này, Điện Biên Phủ trở thành trung tâm hành chính và quân sự
+            phía nam tỉnh Lai Châu. Đặc biệt, năm <u>1954</u>, Chiến dịch Điện
+            Biên Phủ đã kết thúc thắng lợi, chấm dứt ách thống trị của thực dân
+            Pháp ở khu vực này.
+          </p>
+          <p>
+            <strong><mark>Sau năm 1954</mark></strong>
+          </p>
+          <p>
+            Sau chiến thắng Điện Biên Phủ, ngày <u>29/4/1955</u>, trung ương
+            quyết định thành lập Khu tự trị Thái – Mèo nhằm tăng cường đoàn kết
+            và phát triển các dân tộc Tây Bắc, bao gồm các tỉnh Lào Cai, Yên
+            Bái, Sơn La và Lai Châu. Ngày <u>27/9/1962</u>, Quốc hội quyết định
+            tái lập 3 tỉnh Sơn La, Nghĩa Lộ và Lai Châu, trong đó tỉnh Lai Châu
+            lúc đó gồm 7 huyện, bao gồm Điện Biên. Từ năm <u>1992</u>, thị xã
+            Điện Biên Phủ được thành lập và trở thành tỉnh lỵ của tỉnh Lai Châu.
+            Ngày <u>26/11/2003</u>, Quốc hội chia tỉnh Lai Châu thành hai tỉnh:
+            Lai Châu và Điện Biên, chính thức thành lập tỉnh Điện Biên từ ngày
+            <u>1/1/2004</u>. Hiện nay, tỉnh Điện Biên gồm 1 thành phố, 1 thị xã
+            và 8 huyện, tiếp tục phát triển mạnh mẽ cả về kinh tế, văn hóa và an
+            ninh quốc phòng.
+          </p>
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/%C4%90i%E1%BB%87n_Bi%C3%AAn"
+              target="_blank"
+              >Wiki Điện Biên</a
+            >
+            )
+          </p>
+        </article>
+
+        <figure class="w3-center">
+          <img
+            src="https://taybac.tv/wp-content/uploads/2022/10/dien-bien.png"
+            class="w3-image"
+            alt="Điện Biên"
+          />
+          <figcaption style="font-size: 15px">
+            (nguồn hình ảnh:
+            <a
+              href="https://taybac.tv/du-lich-dien-bien-kham-pha-top-5-dia-diem-dep-nhat/"
+              target="_blank"
+              >taybac.tv</a
+            >
+            )
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section class="w3-row-padding w3-padding-16 w3-content" id="menu">
+        <h1 class="w3-padding-16 w3-center" style="color: red; font-size: 50px">
+          ĐỊA LÝ
+        </h1>
+        <article>
+          <p>
+            Tỉnh Điện Biên nằm ở rìa phía Tây khu vực Tây Bắc Việt Nam. Tỉnh có
+            tọa độ địa lý từ 20°54' đến 22°33' vĩ độ Bắc và từ 102°10' đến
+            103°36' kinh độ Đông. Tỉnh nằm cách thủ đô Hà Nội 504 km về phía
+            Tây.
+          </p>
+          <p><strong>Điểm cực của tỉnh:</strong></p>
+          <ul>
+            <li>
+              Điểm cực bắc: xã Sen Thượng, huyện Mường Nhé. khoảng
+              <u>22°22′B, 102°21′Đ</u>
+            </li>
+            <li>
+              Điểm cực đông: bản A Pa Chải, xã Sín Thầu, huyện Mường Nhé.,
+              khoảng <u>22°24′B, 102°12′Đ</u>
+            </li>
+            <li>
+              Điểm cực tây: xã Ta Ma, huyện Tuần Giáo., khoảng
+              <u>22°24′03″ B, 102°08′38″ Đ</u>
+            </li>
+            <li>
+              Điểm cực nam: xã Mường Lói, huyện Điện Biên.., khoảng
+              <u>21°59′B, 103°03′Đ</u>
+            </li>
+          </ul>
+          <p>
+            Lưu ý: Các điểm cực hiện chưa được công bố tọa độ chính thức; các số
+            liệu trên chỉ mang tính ước lượng, dựa trên bản đồ hành chính mới
+            nhất.
+          </p>
+          <p><strong>Tiếp giáp:</strong></p>
+          <ul>
+            <li>Phía đông giáp tỉnh Sơn La</li>
+            <li>Phía tây giáp tỉnh Phôngsali, Lào</li>
+            <li>Phía nam giáp tỉnh Luang Prabang, Lào</li>
+            <li>Phía bắc giáp tỉnh Lai Châu và tỉnh Vân Nam, Trung Quốc.</li>
+          </ul>
+          <p style="font-size: 15px">
+            Nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/%C4%90i%E1%BB%87n_Bi%C3%AAn"
+              target="_blank"
+              >Wikipedia – Điện Biên</a
+            >
+          </p>
+        </article>
+
+        <figure class="w3-center">
+          <img
+            src="https://bandochuyennghiep.com/datafiles/42187/upload/files/HC%20tinh%20A0/Dien%20Bien%2084x110%201-6-13.jpg"
+            class="w3-round w3-image w3-opacity-min w3-center"
+            alt="Bản đồ Điện Biên"
+            style="width: 75%"
+          />
+          <div class="text-overlay"></div>
+          <figcaption style="font-size: 15px">
+            Nguồn hình ảnh:
+            <a
+              href="https://www.bandochuyennghiep.com/ban-do-hanh-chinh-tinh-dien-bien-a0"
+              target="_blank"
+              >bandochuyennghiep.com</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section
+        class="w3-row-padding w3-padding-16 w3-content"
+        id="DIEUKIENTUNHIEN"
+      >
+        <h1 class="w3-center" style="font-size: 50px">ĐIỀU KIỆN TỰ NHIÊN</h1>
+        <article>
+          <p>
+            <strong><mark>Địa hình</mark></strong>
+          </p>
+          <p>
+            Điện Biên có địa hình phức tạp, chủ yếu là đồi núi cao, dốc và bị
+            chia cắt mạnh. Các dãy núi chạy theo hướng Tây Bắc – Đông Nam, độ
+            cao phổ biến từ <u>200 m</u> đến trên <u>1.800 m</u>, thấp dần từ
+            bắc xuống nam và nghiêng từ tây sang đông. Phía bắc tỉnh có các điểm
+            cao <u>1.085 m</u>, <u>1.162 m</u>, <u>1.856 m</u> thuộc huyện Mường
+            Nhé, trong đó cao nhất là đỉnh Pu Đen Đinh cao <u>1.886 m</u>. Phía
+            tây có các điểm cao <u>1.127 m</u>, <u>1.649 m</u>,
+            <u>1.860 m</u> và dãy núi Mường Phăng kéo dài xuống Tuần Giáo.
+          </p>
+
+          <p>
+            <strong><mark>Thung lũng và đồng bằng</mark></strong>
+          </p>
+          <p>
+            Xen giữa các dãy núi cao là nhiều thung lũng hẹp, sông suối nhỏ và
+            dốc. Tiêu biểu nhất là thung lũng Mường Thanh, tạo thành cánh đồng
+            Mường Thanh có diện tích hơn <u>150 km²</u>, là cánh đồng lớn nhất
+            tỉnh Điện Biên và cũng là cánh đồng nổi tiếng của khu vực Tây Bắc.
+          </p>
+
+          <p>
+            <strong><mark>Địa chất</mark></strong>
+          </p>
+          <p>
+            Điện Biên có lịch sử phát triển địa chất lâu dài và cấu trúc kiến
+            tạo phức tạp. Sau giai đoạn ổn định tương đối vào thế Pliocen và kỷ
+            Đệ Tứ, địa hình núi bị phân cắt mạnh. Quá trình nâng cao địa hình và
+            xâm thực của dòng chảy đã làm các thung lũng sông ngày càng sâu, với
+            sườn dốc cao khoảng <u>300–400 m</u>, xuất hiện nhiều vách đá dựng
+            đứng, thác ghềnh.
+          </p>
+
+          <p>
+            <strong><mark>Thổ nhưỡng</mark></strong>
+          </p>
+          <p>
+            Đất đai ở Điện Biên chủ yếu thuộc nhóm đất đỏ vàng với diện tích
+            khoảng <u>629.806 ha</u>, ngoài ra còn có đất đen và đất phù sa
+            khoảng <u>12.622 ha</u>, phân bố tập trung ở các thung lũng lớn, đặc
+            biệt là vùng Mường Thanh, thuận lợi cho phát triển nông nghiệp.
+          </p>
+
+          <p>
+            <strong><mark>Các đứt gãy kiến tạo</mark></strong>
+          </p>
+          <p>
+            Điện Biên nằm tại nơi giao nhau của nhiều đứt gãy sâu như đứt gãy
+            sông Đà, sông Mã, Điện Biên – Lai Châu và Sơn La. Trong đó, đứt gãy
+            Lai Châu – Điện Biên hoạt động mạnh theo hướng tách giãn, tạo các
+            địa hào sụt lún và nâng cao địa hình hai bên, làm gia tăng nguy cơ
+            trượt lở đất, lũ bùn đá và động đất.
+          </p>
+
+          <p>
+            <strong><mark>Khoáng sản</mark></strong>
+          </p>
+          <p>
+            Điện Biên có nguồn tài nguyên khoáng sản khá đa dạng với khoảng
+            <u>83</u> mỏ và điểm mỏ, gồm than mỡ, đá vôi, đá granit, sắt, chì,
+            kẽm, nhôm, đồng, thủy ngân và nước khoáng. Trong đó, than mỡ tập
+            trung chủ yếu ở huyện Điện Biên và Điện Biên Đông; chì, kẽm và vật
+            liệu xây dựng ở Tuần Giáo và Tủa Chùa.
+          </p>
+
+          <p>
+            <strong><mark>Thủy văn</mark></strong>
+          </p>
+          <p>
+            Điện Biên nằm trong lưu vực của ba hệ thống sông lớn gồm sông Đà
+            chiếm <u>55,5%</u>, sông Mã chiếm <u>23,6%</u> và sông Mê Kông chiếm
+            <u>17,3%</u> diện tích tự nhiên toàn tỉnh. Sông ngòi có độ dốc lớn,
+            nhiều thác ghềnh, giàu tiềm năng phát triển thủy điện và chất lượng
+            nước tương đối tốt.
+          </p>
+
+          <p>
+            <strong><mark>Hồ, suối và nước ngầm</mark></strong>
+          </p>
+          <p>
+            Toàn tỉnh có hơn <u>10</u> hồ và trên <u>1.000</u> sông, suối lớn
+            nhỏ, phân bố tương đối đều. Nổi bật là hồ Pá Khoang, suối khoáng
+            nóng Hua Pe và suối khoáng nóng Uva. Nguồn nước ngầm tập trung chủ
+            yếu ở các thung lũng lớn như huyện Điện Biên, Tuần Giáo và Tủa Chùa,
+            có trữ lượng khá lớn nhưng hiện mới được khai thác hạn chế.
+          </p>
+
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/%C4%90i%E1%BB%87n_Bi%C3%AAn"
+              target="_blank"
+              >wiki-Điện Biên</a
+            >
+            )
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <section
+        class="w3-container w3-padding-16 table-responsive w3-content"
+        style="overflow-x: auto"
+        id="khihau"
+      >
+        <h1 class="w3-center" style="font-size: 50px">KHÍ HẬU</h1>
+        <br />
+        <article>
+          <p>
+            <strong><mark>Đặc điểm chung</mark></strong>
+          </p>
+          <p>
+            Điện Biên có khí hậu nhiệt đới gió mùa núi cao, mang đặc trưng rõ
+            rệt của vùng Tây Bắc. Mùa đông tương đối lạnh và ít mưa, kết thúc
+            sớm, không có hiện tượng mưa phùn và nồm ẩm như các tỉnh phía đông
+            dãy Hoàng Liên Sơn. Mùa hạ nóng, mưa nhiều, thời tiết diễn biến thất
+            thường và chịu ảnh hưởng của gió tây khô nóng. Khí hậu của tỉnh có
+            sự phân hóa mạnh theo địa hình và theo mùa, đồng thời có biên độ
+            nhiệt ngày – đêm thuộc loại cao nhất cả nước.
+          </p>
+          <p>
+            <strong><mark>Nhiệt độ</mark></strong>
+          </p>
+          <p>
+            Nhiệt độ trung bình năm của Điện Biên dao động từ <u>21°C</u> đến
+            <u>23°C</u>. Nhiệt độ trung bình thấp nhất thường xuất hiện vào các
+            tháng mùa đông, từ tháng <u>12</u> đến tháng <u>2</u> năm sau, phổ
+            biến trong khoảng <u>14°C – 18°C</u>. Nhiệt độ trung bình cao nhất
+            diễn ra từ tháng <u>4</u> đến tháng <u>9</u>, khoảng <u>25°C</u>,
+            chủ yếu ở những khu vực có độ cao dưới <u>500 m</u>. Nhiệt độ trung
+            bình năm có xu hướng tăng dần qua các thập niên.
+          </p>
+          <p>
+            <strong><mark>Lượng mưa và độ ẩm</mark></strong>
+          </p>
+          <p>
+            Lượng mưa trung bình năm ở Điện Biên đạt từ <u>1.350 mm</u> đến
+            <u>2.200 mm</u>, phân bố không đều giữa các địa phương. Mưa tập
+            trung chủ yếu theo mùa, bắt đầu từ tháng <u>5</u> và kết thúc sớm
+            vào tháng <u>9</u>, mùa khô kéo dài từ tháng <u>10</u> đến tháng
+            <u>4</u> năm sau. Từ những thập niên <u>1970–1980</u> trở lại đây,
+            tổng lượng mưa hàng năm có xu hướng giảm. Độ ẩm trung bình năm dao
+            động từ <u>77%</u> đến <u>90%</u>.
+          </p>
+          <p>
+            <strong><mark>Nắng và bức xạ</mark></strong>
+          </p>
+          <p>
+            Điện Biên là tỉnh có số giờ nắng khá lớn, trung bình từ
+            <u>1.850</u> đến <u>2.150 giờ/năm</u>, tương đương
+            <u>115–215 giờ/tháng</u>. Các tháng có số giờ nắng thấp là tháng
+            <u>6</u> và <u>7</u>, trong khi các tháng có số giờ nắng cao thường
+            rơi vào tháng <u>3</u>, <u>4</u>, <u>8</u> và <u>9</u>.
+          </p>
+          <p>
+            <strong><mark>Ảnh hưởng địa hình đến khí hậu</mark></strong>
+          </p>
+          <p>
+            Chế độ nhiệt ở Điện Biên chịu ảnh hưởng rõ rệt của địa hình. Do nằm
+            khuất sau dãy Hoàng Liên Sơn, khối không khí lạnh khi di chuyển đến
+            đây phải theo thung lũng sông Đà nên bị suy yếu, khiến mùa đông ở
+            Điện Biên ấm và khô hơn so với vùng Đông Bắc. Tuy nhiên, do địa hình
+            tương đối kín, khi có các đợt không khí lạnh mạnh tràn về, lạnh
+            thường bị giữ lại lâu, tạo nên những đợt rét kéo dài.
+          </p>
+          <p>
+            <strong><mark>Hiện tượng thời tiết cực đoan</mark></strong>
+          </p>
+          <p>
+            Nhiệt độ thấp kỷ lục ở Điện Biên từng ghi nhận là <u>-4,2°C</u>, xảy
+            ra vào lúc <u>6 giờ sáng ngày 25/1/2016</u> tại trạm khí tượng Pha
+            Đin, cho thấy mức độ khắc nghiệt của thời tiết trong những đợt rét
+            mạnh.
+          </p>
+
+          <table
+            style="
+              width: 100%;
+              border-color: rgb(162, 169, 177);
+              background-color: rgb(234, 236, 240);
+            "
+          >
+            <tbody>
+              <tr>
+                <th colspan="14" style="font-size: 25px">
+                  Dữ liệu khí hậu của Điện Biên
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">Tháng</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+                <th scope="col">4</th>
+                <th scope="col">5</th>
+                <th scope="col">6</th>
+                <th scope="col">7</th>
+                <th scope="col">8</th>
+                <th scope="col">9</th>
+                <th scope="col">10</th>
+                <th scope="col">11</th>
+                <th scope="col">12</th>
+                <th>Năm</th>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row" style="height: 16px">Cao kỉ lục °C (°F)</th>
+                <td style="background: #ff3e00; color: #000000">
+                  32.4<br />(90.3)
+                </td>
+                <td style="background: #ff3400; color: #000000">
+                  33.9<br />(93.0)
+                </td>
+                <td style="background: #ff2500; color: #000000">
+                  36.1<br />(97.0)
+                </td>
+                <td style="background: #ff1400; color: #ffffff">
+                  38.5<br />(101.3)
+                </td>
+                <td style="background: #ff1300; color: #ffffff">
+                  38.6<br />(101.5)
+                </td>
+                <td style="background: #ff1800; color: #ffffff">
+                  37.9<br />(100.2)
+                </td>
+                <td style="background: #ff2500; color: #000000">
+                  36.0<br />(96.8)
+                </td>
+                <td style="background: #ff2b00; color: #000000">
+                  35.2<br />(95.4)
+                </td>
+                <td style="background: #ff2c00; color: #000000">
+                  35.0<br />(95.0)
+                </td>
+                <td style="background: #ff2900; color: #000000">
+                  35.5<br />(95.9)
+                </td>
+                <td style="background: #ff3e00; color: #000000">
+                  32.4<br />(90.3)
+                </td>
+                <td style="background: #ff4600; color: #000000">
+                  31.2<br />(88.2)
+                </td>
+                <td style="background: #ff1300; color: #ffffff">
+                  38.6<br />(101.5)
+                </td>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row" style="height: 16px">
+                  Trung bình ngày tối đa °C (°F)
+                </th>
+                <td style="background: #ff7a00; color: #000000">
+                  23.7<br />(74.7)
+                </td>
+                <td style="background: #ff6b00; color: #000000">
+                  25.9<br />(78.6)
+                </td>
+                <td style="background: #ff5500; color: #000000">
+                  29.1<br />(84.4)
+                </td>
+                <td style="background: #ff4900; color: #000000">
+                  30.9<br />(87.6)
+                </td>
+                <td style="background: #ff4400; color: #000000">
+                  31.6<br />(88.9)
+                </td>
+                <td style="background: #ff4800; color: #000000">
+                  31.0<br />(87.8)
+                </td>
+                <td style="background: #ff4d00; color: #000000">
+                  30.3<br />(86.5)
+                </td>
+                <td style="background: #ff4d00; color: #000000">
+                  30.2<br />(86.4)
+                </td>
+                <td style="background: #ff4d00; color: #000000">
+                  30.2<br />(86.4)
+                </td>
+                <td style="background: #ff5600; color: #000000">
+                  28.9<br />(84.0)
+                </td>
+                <td style="background: #ff6800; color: #000000">
+                  26.3<br />(79.3)
+                </td>
+                <td style="background: #ff7b00; color: #000000">
+                  23.6<br />(74.5)
+                </td>
+                <td style="background: #ff5900; color: #000000">
+                  28.5<br />(83.3)
+                </td>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row" style="height: 16px">
+                  Trung bình ngày °C (°F)
+                </th>
+                <td style="background: #ffad5c; color: #000000">
+                  16.3<br />(61.3)
+                </td>
+                <td style="background: #ffa144; color: #000000">
+                  18.0<br />(64.4)
+                </td>
+                <td style="background: #ff8d1c; color: #000000">
+                  20.9<br />(69.6)
+                </td>
+                <td style="background: #ff7a00; color: #000000">
+                  23.7<br />(74.7)
+                </td>
+                <td style="background: #ff6e00; color: #000000">
+                  25.5<br />(77.9)
+                </td>
+                <td style="background: #ff6a00; color: #000000">
+                  26.0<br />(78.8)
+                </td>
+                <td style="background: #ff6c00; color: #000000">
+                  25.8<br />(78.4)
+                </td>
+                <td style="background: #ff6e00; color: #000000">
+                  25.5<br />(77.9)
+                </td>
+                <td style="background: #ff7300; color: #000000">
+                  24.7<br />(76.5)
+                </td>
+                <td style="background: #ff8205; color: #000000">
+                  22.6<br />(72.7)
+                </td>
+                <td style="background: #ff9831; color: #000000">
+                  19.4<br />(66.9)
+                </td>
+                <td style="background: #ffae5d; color: #000000">
+                  16.2<br />(61.2)
+                </td>
+                <td style="background: #ff860d; color: #000000">
+                  22.0<br />(71.6)
+                </td>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row" style="height: 16px">
+                  Tối thiểu trung bình ngày °C (°F)
+                </th>
+                <td style="background: #ffca96; color: #000000">
+                  12.1<br />(53.8)
+                </td>
+                <td style="background: #ffc388; color: #000000">
+                  13.1<br />(55.6)
+                </td>
+                <td style="background: #ffb367; color: #000000">
+                  15.5<br />(59.9)
+                </td>
+                <td style="background: #ff9b37; color: #000000">
+                  19.0<br />(66.2)
+                </td>
+                <td style="background: #ff8913; color: #000000">
+                  21.6<br />(70.9)
+                </td>
+                <td style="background: #ff7e00; color: #000000">
+                  23.2<br />(73.8)
+                </td>
+                <td style="background: #ff7e00; color: #000000">
+                  23.2<br />(73.8)
+                </td>
+                <td style="background: #ff8002; color: #000000">
+                  22.8<br />(73.0)
+                </td>
+                <td style="background: #ff8913; color: #000000">
+                  21.6<br />(70.9)
+                </td>
+                <td style="background: #ff9a35; color: #000000">
+                  19.1<br />(66.4)
+                </td>
+                <td style="background: #ffb368; color: #000000">
+                  15.4<br />(59.7)
+                </td>
+                <td style="background: #ffcb97; color: #000000">
+                  12.0<br />(53.6)
+                </td>
+                <td style="background: #ffa042; color: #000000">
+                  18.2<br />(64.8)
+                </td>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row" style="height: 16px">Thấp kỉ lục °C (°F)</th>
+                <td style="background: #dfdfff; color: #000000">
+                  −1.3<br />(29.7)
+                </td>
+                <td style="background: #fffcfa; color: #000000">
+                  4.8<br />(40.6)
+                </td>
+                <td style="background: #fff9f3; color: #000000">
+                  5.3<br />(41.5)
+                </td>
+                <td style="background: #ffcf9f; color: #000000">
+                  11.4<br />(52.5)
+                </td>
+                <td style="background: #ffb871; color: #000000">
+                  14.8<br />(58.6)
+                </td>
+                <td style="background: #ffa64d; color: #000000">
+                  17.4<br />(63.3)
+                </td>
+                <td style="background: #ff9d3b; color: #000000">
+                  18.7<br />(65.7)
+                </td>
+                <td style="background: #ffd4a9; color: #000000">
+                  10.7<br />(51.3)
+                </td>
+                <td style="background: #ffb66e; color: #000000">
+                  15.0<br />(59.0)
+                </td>
+                <td style="background: #ffe8d2; color: #000000">
+                  7.7<br />(45.9)
+                </td>
+                <td style="background: #fcfcff; color: #000000">
+                  4.0<br />(39.2)
+                </td>
+                <td style="background: #e8e8ff; color: #000000">
+                  0.4<br />(32.7)
+                </td>
+                <td style="background: #dfdfff; color: #000000">
+                  −1.3<br />(29.7)
+                </td>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row" style="height: 16px">
+                  Lượng Giáng thủy trung bình mm (inches)
+                </th>
+                <td style="background: #dfffdf; color: #000000">
+                  21<br />(0.8)
+                </td>
+                <td style="background: #ccffcc; color: #000000">
+                  31<br />(1.2)
+                </td>
+                <td style="background: #adffad; color: #000000">
+                  55<br />(2.2)
+                </td>
+                <td style="background: #54ff54; color: #000000">
+                  111<br />(4.4)
+                </td>
+                <td style="background: #00e700; color: #000000">
+                  187<br />(7.4)
+                </td>
+                <td style="background: #005800; color: #ffffff">
+                  274<br />(10.8)
+                </td>
+                <td style="background: #003000; color: #ffffff">
+                  310<br />(12.2)
+                </td>
+                <td style="background: #003000; color: #ffffff">
+                  313<br />(12.3)
+                </td>
+                <td style="background: #16ff16; color: #000000">
+                  151<br />(5.9)
+                </td>
+                <td style="background: #9eff9e; color: #000000">
+                  65<br />(2.6)
+                </td>
+                <td style="background: #cfffcf; color: #000000">
+                  31<br />(1.2)
+                </td>
+                <td style="background: #dfffdf; color: #000000">
+                  21<br />(0.8)
+                </td>
+                <td style="background: #38ff38; color: #000000">
+                  1.568<br />(61.7)
+                </td>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row" style="height: 16px">
+                  Số ngày giáng thủy trung bình
+                </th>
+                <td style="background: #c3c3ff; color: #000000">4.8</td>
+                <td style="background: #c8c8ff; color: #000000">4.0</td>
+                <td style="background: #b7b7ff; color: #000000">5.8</td>
+                <td style="background: #6060ff; color: #ffffff">12.4</td>
+                <td style="background: #2c2cff; color: #ffffff">17.1</td>
+                <td style="background: #0000fb; color: #ffffff">20.3</td>
+                <td style="background: #0000e9; color: #ffffff">22.4</td>
+                <td style="background: #0000f7; color: #ffffff">21.3</td>
+                <td style="background: #5454ff; color: #ffffff">13.4</td>
+                <td style="background: #9393ff; color: #000000">8.7</td>
+                <td style="background: #b8b8ff; color: #000000">5.5</td>
+                <td style="background: #d1d1ff; color: #000000">3.7</td>
+                <td style="background: #6d6dff; color: #000000">139.3</td>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row" style="height: 16px">
+                  Độ ẩm tương đối trung bình (%)
+                </th>
+                <td style="background: #0000c1; color: #ffffff">82.7</td>
+                <td style="background: #0000cd; color: #ffffff">79.7</td>
+                <td style="background: #0000cf; color: #ffffff">79.2</td>
+                <td style="background: #0000c8; color: #ffffff">81.0</td>
+                <td style="background: #0000c4; color: #ffffff">81.9</td>
+                <td style="background: #0000ba; color: #ffffff">84.6</td>
+                <td style="background: #0000b3; color: #ffffff">86.3</td>
+                <td style="background: #0000af; color: #ffffff">87.4</td>
+                <td style="background: #0000b3; color: #ffffff">86.4</td>
+                <td style="background: #0000b9; color: #ffffff">84.9</td>
+                <td style="background: #0000be; color: #ffffff">83.5</td>
+                <td style="background: #0000be; color: #ffffff">83.4</td>
+                <td style="background: #0000be; color: #ffffff">83.4</td>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row" style="height: 16px">
+                  Số giờ nắng trung bình tháng
+                </th>
+                <td style="background: #c9c900; color: #000000">163</td>
+                <td style="background: #d5d500; color: #000000">175</td>
+                <td style="background: #d8d800; color: #000000">205</td>
+                <td style="background: #dada00; color: #000000">206</td>
+                <td style="background: #d8d800; color: #000000">203</td>
+                <td style="background: #c2c216; color: #000000">142</td>
+                <td style="background: #bbbb41; color: #000000">131</td>
+                <td style="background: #c2c218; color: #000000">146</td>
+                <td style="background: #d0d000; color: #000000">172</td>
+                <td style="background: #cece00; color: #000000">173</td>
+                <td style="background: #caca00; color: #000000">158</td>
+                <td style="background: #c9c900; color: #000000">161</td>
+                <td style="background: #cece00; color: #000000">2.034</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size: 15px">
+            (Nguồn:
+            <a
+              href="https://vi.wikipedia.org/wiki/%C4%90i%E1%BB%87n_Bi%C3%AAn"
+              target="_blank"
+              >wiki-Điện Biên</a
+            >)
+          </p>
+        </article>
+      </section>
+      <hr />
+      <section class="w3-row-padding w3-padding-16" id="THOITIET">
+        <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+          DỰ BÁO THỜI TIẾT TRONG TỈNH
+        </h1>
+        <div
+          style="
+            max-width: 760px;
+            margin: 0 auto;
+            font-family: &quot;Montserrat&quot;, Arial, sans-serif;
+          "
+        >
+          <h2
+            class="section-title"
+            style="text-align: center; color: #0a3d2e; margin-bottom: 6px"
+          >
+            🌤 Dự Báo Thời Tiết
+          </h2>
+          <p
+            style="
+              text-align: center;
+              color: #666;
+              font-size: 14px;
+              margin-bottom: 20px;
+            "
+          >
+            Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
+          </p>
+
+          <div
+            style="position: relative; max-width: 440px; margin: 0 auto 22px"
+          >
+            <span
+              style="
+                position: absolute;
+                left: 14px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 17px;
+                pointer-events: none;
+              "
+              >🔍</span
+            >
+            <input
+              type="text"
+              id="tt-input"
+              placeholder="Gõ tên xã, phường, thị trấn..."
+              oninput="ttFilter()"
+              onfocus="ttShow()"
+              autocomplete="off"
+              style="
+                width: 100%;
+                padding: 13px 14px 13px 42px;
+                font-size: 15px;
+                border-radius: 10px;
+                border: 2px solid #0a3d2e;
+                color: #333;
+                background: #fff;
+                font-family: inherit;
+                outline: none;
+                box-sizing: border-box;
+              "
+            />
+            <div
+              id="tt-drop"
+              style="
+                display: none;
+                position: absolute;
+                top: calc(100% + 4px);
+                left: 0;
+                right: 0;
+                background: #fff;
+                border: 2px solid #0a3d2e;
+                border-radius: 10px;
+                max-height: 250px;
+                overflow-y: auto;
+                z-index: 9999;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+              "
+            ></div>
+          </div>
+
+          <div
+            id="tt-box"
+            style="
+              display: none;
+              border-radius: 14px;
+              overflow: hidden;
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            "
+          >
+            <div
+              style="
+                background: #0a3d2e;
+                color: #fff;
+                padding: 12px 20px;
+                font-size: 15px;
+                font-weight: 600;
+              "
+            >
+              📍 Thời tiết: <span id="tt-name"></span>
+            </div>
+            <div id="tt-widget-wrap" style="background: #fff"></div>
+            <div
+              id="tt-noembed"
+              style="
+                display: none;
+                padding: 24px;
+                text-align: center;
+                background: #fff;
+              "
+            >
+              <p style="color: #888; font-size: 14px">
+                ⚙️ Khu vực này chưa có dữ liệu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var TT_AREAS = [
+            {
+              name: "Huyện Tuần Giáo",
+              parent: "Tỉnh Điện Biên cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dien-bien/tuan-giao?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Tủa Chùa",
+              parent: "Tỉnh Điện Biên cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dien-bien/tua-chua?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Nậm Pồ",
+              parent: "Tỉnh Điện Biên cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dien-bien/nam-po?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Mường Nhé",
+              parent: "Tỉnh Điện Biên cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dien-bien/muong-nhe?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Mường Chà",
+              parent: "Tỉnh Điện Biên cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ha-noi?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Mường Ảng",
+              parent: "Tỉnh Điện Biên cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dien-bien/muong-ang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Điện Biên Đông",
+              parent: "Tỉnh Điện Biên cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dien-bien/dien-bien-dong?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Điện Biên",
+              parent: "Tỉnh Điện Biên cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dien-bien/dien-bien?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thị xã Mường Lay",
+              parent: "Tỉnh Điện Biên cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dien-bien/muong-lay?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thành phố Điện Biên Phủ",
+              parent: "Tỉnh Điện Biên cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dien-bien/dien-bien-phu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+          ];
+          function ttNorm(s) {
+            return s
+              .toLowerCase()
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .replace(/đ/g, "d");
+          }
+
+          var ttFiltered = TT_AREAS.slice();
+
+          function ttFilter() {
+            var q = ttNorm(document.getElementById("tt-input").value.trim());
+            ttFiltered = q
+              ? TT_AREAS.filter(function (a) {
+                  return ttNorm(a.name).indexOf(q) !== -1;
+                })
+              : TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttShow() {
+            ttFiltered = TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttRender() {
+            var dd = document.getElementById("tt-drop");
+            if (!ttFiltered.length) {
+              dd.innerHTML =
+                '<div style="padding:14px 18px;color:#999;font-size:14px;">Không tìm thấy</div>';
+              return;
+            }
+            dd.innerHTML = ttFiltered
+              .map(function (a) {
+                var idx = TT_AREAS.indexOf(a);
+                var dot = a.widget.trim()
+                  ? '<span style="color:#27ae60;font-size:10px;margin-left:6px;" title="Đã có widget">●</span>'
+                  : '<span style="color:#ccc;font-size:10px;margin-left:6px;" title="Chưa có widget">●</span>';
+                return (
+                  '<div onclick="ttSelect(' +
+                  idx +
+                  ')"' +
+                  ' style="padding:11px 18px;font-size:14px;cursor:pointer;' +
+                  'border-bottom:1px solid #f5f5f5;display:flex;align-items:center;"' +
+                  " onmouseover=\"this.style.background='#f0f7f4'\"" +
+                  " onmouseout=\"this.style.background='#fff'\">" +
+                  '<span style="color:#0a3d2e;font-weight:600;">' +
+                  a.name +
+                  "</span>" +
+                  dot +
+                  "</div>"
+                );
+              })
+              .join("");
+          }
+
+          function ttSelect(idx) {
+            var a = TT_AREAS[idx];
+            document.getElementById("tt-input").value = a.name;
+            document.getElementById("tt-drop").style.display = "none";
+            var locationTitle = a.name;
+            if (a.parent) {
+              locationTitle += " (" + a.parent + ")";
+            }
+
+            document.getElementById("tt-name").textContent = locationTitle;
+            document.getElementById("tt-box").style.display = "block";
+
+            var wrap = document.getElementById("tt-widget-wrap");
+            var noEmbed = document.getElementById("tt-noembed");
+
+            if (a.widget && a.widget.trim()) {
+              wrap.innerHTML = a.widget;
+              wrap.style.display = "block";
+              noEmbed.style.display = "none";
+            } else {
+              wrap.innerHTML = "";
+              wrap.style.display = "none";
+              noEmbed.style.display = "block";
+            }
+
+            document
+              .getElementById("tt-box")
+              .scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+
+          document.addEventListener("click", function (e) {
+            var inp = document.getElementById("tt-input");
+            var drop = document.getElementById("tt-drop");
+            if (drop && e.target !== inp && !drop.contains(e.target))
+              drop.style.display = "none";
+          });
+        </script>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="contact">
+        <h1 class="w3-center" style="font-size: 50px">DÂN CƯ</h1>
+        <article>
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              border: 1px solid #999;
+            "
+          >
+            <tr style="background: #f0f0f0">
+              <th>Năm</th>
+              <th>Dân số</th>
+              <th>±%</th>
+            </tr>
+            <tr>
+              <td>2004</td>
+              <td><u>423.300</u></td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td><u>438.500</u></td>
+              <td>+3,6%</td>
+            </tr>
+            <tr>
+              <td>2006</td>
+              <td><u>452.700</u></td>
+              <td>+3,2%</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td><u>466.000</u></td>
+              <td>+2,9%</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td><u>479.300</u></td>
+              <td>+2,9%</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td><u>490.306</u></td>
+              <td>+2,3%</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td><u>501.200</u></td>
+              <td>+2,2%</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td><u>512.300</u></td>
+              <td>+2,2%</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td><u>519.300</u></td>
+              <td>+1,4%</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td><u>528.500</u></td>
+              <td>+1,8%</td>
+            </tr>
+            <tr>
+              <td>2014</td>
+              <td><u>538.100</u></td>
+              <td>+1,8%</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td><u>557.100</u></td>
+              <td>+3,5%</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td><u>568.300</u></td>
+              <td>+2,0%</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td><u>579.400</u></td>
+              <td>+2,0%</td>
+            </tr>
+            <tr>
+              <td>2018</td>
+              <td><u>590.500</u></td>
+              <td>+1,9%</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td><u>601.700</u></td>
+              <td>+1,9%</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td><u>613.500</u></td>
+              <td>+2,0%</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td><u>625.100</u></td>
+              <td>+1,9%</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td><u>635.921</u></td>
+              <td>+1,7%</td>
+            </tr>
+          </table>
+          <p>
+            <strong><mark>Quy mô và cơ cấu dân số</mark></strong>
+          </p>
+          <p>
+            Năm <u>2022</u>, dân số trung bình của tỉnh Điện Biên ước đạt
+            <u>635.921 người</u>, tăng <u>1,73%</u> so với năm <u>2021</u> (tăng
+            <u>10.832 người</u>). Trong đó, dân số thành thị là
+            <u>96.668 người</u>, chiếm <u>15,20%</u>; dân số nông thôn đạt
+            <u>539.253 người</u>, chiếm <u>84,80%</u>. Dân số nam có
+            <u>322.959 người</u>, chiếm <u>50,79%</u>, trong khi dân số nữ là
+            <u>312.962 người</u>, chiếm <u>49,21%</u>.
+          </p>
+
+          <p>
+            <strong><mark>Dân số và mật độ</mark></strong>
+          </p>
+          <p>
+            Tính đến năm <u>2021</u>, dân số tỉnh Điện Biên đạt
+            <u>625.100 người</u> với mật độ dân số <u>66 người/km²</u>. Trong
+            tổng dân số có <u>317.400 nam</u> và <u>307.700 nữ</u>. Dân số thành
+            thị khoảng <u>95.000 người</u>, còn dân số nông thôn là
+            <u>530.100 người</u>.
+          </p>
+
+          <p>
+            <strong><mark>Tăng dân số và đô thị hóa</mark></strong>
+          </p>
+          <p>
+            Giai đoạn từ năm <u>2009</u> đến năm <u>2019</u>, tỷ lệ tăng tự
+            nhiên dân số của tỉnh Điện Biên duy trì ở mức khoảng <u>2‰</u>. Năm
+            <u>2019</u>, toàn tỉnh có <u>134.273 hộ gia đình</u>, trong đó có
+            <u>24.646 hộ</u> ở thành thị và <u>109.627 hộ</u> ở nông thôn. Tỷ lệ
+            đô thị hóa của tỉnh tính đến năm <u>2022</u> đạt khoảng <u>30%</u>.
+          </p>
+
+          <p>
+            <strong><mark>Thành phần dân tộc</mark></strong>
+          </p>
+          <p>
+            Theo Tổng điều tra dân số năm <u>2019</u>, tỉnh Điện Biên có
+            <u>42 dân tộc</u> cùng sinh sống. Trong đó, dân tộc Mông là dân tộc
+            đông nhất với <u>228.279 người</u>, chiếm <u>38,1%</u> dân số toàn
+            tỉnh; dân tộc Thái đứng thứ hai với <u>213.714 người</u>, chiếm
+            <u>35,6%</u>; dân tộc Kinh đứng thứ ba với <u>104.061 người</u>,
+            chiếm <u>17,3%</u>. Các dân tộc khác như Dao, Khơ Mú, Hà Nhì, Giáy,
+            La Hủ, Lự, Kháng, Mảng, Tày, Nùng, Mường… góp phần tạo nên cơ cấu
+            dân cư đa dạng của tỉnh.
+          </p>
+
+          <p>
+            Theo dữ liệu Sáp nhập tỉnh, thành Việt Nam 2025, Điện Biên có diện
+            tích: 9.540 km², xếp thứ 14; dân số: 673.091 người, xếp thứ 32;
+          </p>
+          <p style="font-size: 15px">
+            (Nguồn thông tin:
+            <a href="https://vi.wikipedia.org/wiki/" target="_blank"
+              >Wikipedia – Điện Biên</a
+            >)
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="VANHOA">
+        <h1 class="w3-center" style="font-size: 50px">VĂN HOÁ, LỄ HỘI</h1>
+        <article>
+          <h2 style="font-size: 40px">
+            <strong><mark>VĂN HOÁ:</mark></strong>
+          </h2>
+          <p>
+            Điện Biên là vùng đất giàu bản sắc văn hóa dân tộc, với nhiều lễ
+            hội, nghi lễ, tập tục truyền thống phản ánh đời sống, tín ngưỡng và
+            lịch sử của các dân tộc Tây Bắc.
+          </p>
+          <h2 style="font-size: 40px">
+            <strong><mark>LỄ HỘI:</mark></strong>
+          </h2>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              <strong>-Các lễ hội tiêu biểu của tỉnh Điện Biên:</strong>
+            </summary>
+            <ol type="1">
+              <li>
+                <mark
+                  ><strong>Lễ kỷ niệm chiến thắng Điện Biên Phủ</strong></mark
+                >
+                <p>Thời gian: <u>Hàng năm, vào ngày 7 tháng 5,</u></p>
+                <p>
+                  Địa điểm:
+                  <u>Quảng trường 7–5, trung tâm thành phố Điện Biên Phủ.</u>
+                </p>
+                <p>
+                  Hàng năm, vào ngày 7 tháng 5, lễ kỷ niệm chiến thắng Điện Biên
+                  Phủ được tổ chức rất long trọng, đặc biệt là ở các năm chẵn và
+                  năm tròn. Ngày lễ này không chỉ là dịp để tỉnh Điện Biên tự
+                  hào về quá khứ anh hùng mà còn là cơ hội để cả nước và thế
+                  giới nhìn lại một phần quan trọng trong lịch sử Việt Nam. Hàng
+                  nghìn du khách từ khắp nơi đổ về để được ngắm nhìn những địa
+                  danh một thời oanh liệt, nơi đã chứng kiến những đợt sóng gió
+                  lịch sử nảy lửa.
+                </p>
+                <p>
+                  Lễ kỷ niệm không chỉ là dịp để tưởng nhớ về quá khứ hào hùng
+                  mà còn là dịp để tôn vinh tinh thần đoàn kết, gan dạ và hy
+                  sinh của những người lính anh hùng. Đến với Điện Biên vào
+                  những ngày này, bạn sẽ được trải nghiệm không khí trang trọng,
+                  đồng lòng tưởng nhớ và tôn vinh những người anh hùng đã hy
+                  sinh vì tự do và độc lập của tổ quốc.
+                </p>
+                <figure>
+                  <img
+                    src="https://tourhot24h.vn/wp-content/uploads/2023/12/le-hoi-dien-bien-ky-niem-chien-thang-dien-bien-phu.jpg"
+                    class="w3-container"
+                    alt="Lễ kỷ niệm chiến thắng Điện Biên Phủ"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://tourhot24h.vn/an-tuong-voi-top-10-le-hoi-dien-bien-dac-sac/"
+                      target="_blank"
+                      >tourhot24h.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội hoa ban </strong></mark>
+                <p>Thời gian: <u> Hàng năm, vào tháng 2 âm lịch</u></p>
+                <p>
+                  Địa điểm: <u>Quảng trường 7–5, thành phố Điện Biên Phủ</u>
+                </p>
+                <p>
+                  Lễ hội Hoa Ban là một nét văn hóa truyền thống độc đáo và lâu
+                  đời của người dân Điện Biên. Hàng năm, vào tháng 2 âm lịch,
+                  khi mùa xuân đến và hoa ban nở trắng khắp núi rừng, người Thái
+                  Tây Bắc lại tổ chức hội hoa ban để cầu mùa, cầu phúc, bày tỏ
+                  lòng hiếu thảo với tổ tiên và tạo cơ hội cho trai gái gặp gỡ,
+                  giao lưu qua những câu hát, tiếng đàn.
+                </p>
+                <p>
+                  Lễ hội Hoa Ban là lễ hội Điện Biên thu hút nhiều du khách đến
+                  tham gia, không chỉ để chiêm ngưỡng vẻ đẹp của hoa ban mà còn
+                  để khám phá các quần thể di tích chiến trường Điện Biên Phủ,
+                  tìm hiểu về phong tục tập quán của các dân tộc thiểu số và
+                  tham quan những di tích lịch sử nổi bật của vùng đất này. Lễ
+                  hội Hoa Ban là ngày hội của tình yêu và hạnh phúc, là biểu
+                  tượng của sự sống và sự vươn lên của người dân Điện Biên.
+                </p>
+                <figure>
+                  <img
+                    src="https://tourhot24h.vn/wp-content/uploads/2023/12/le-hoi-hoa-ban-le-hoi-dien-bien.jpg"
+                    class="w3-container"
+                    alt="Lễ hội hoa ban"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://tourhot24h.vn/an-tuong-voi-top-10-le-hoi-dien-bien-dac-sac/"
+                      target="_blank"
+                      >tourhot24h.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội thành Bản Phủ</strong></mark>
+                <p>Thời gian: <u>ngày 24 và 25 tháng 2 âm lịch hàng năm</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Thành Bản Phủ, xã Noong Hẹt, huyện Điện Biên, tỉnh Điện
+                    Biên</u
+                  >
+                </p>
+                <p>
+                  Một lễ hội truyền thống đậm đà bản sắc dân tộc ở Điện Biên là
+                  lễ hội Thành Bản Phủ. Lễ hội này diễn ra vào ngày 24 và 25
+                  tháng 2 âm lịch hàng năm để tôn vinh những chiến công của
+                  Hoàng Công Chất và các tướng lĩnh, nghĩa quân khác trong cuộc
+                  kháng chiến chống quân xâm lược giặc Phẻ tại Mường Then.
+                </p>
+                <p>
+                  Lễ hội gồm hai phần: phần lễ và phần hội. Phần lễ bao gồm các
+                  nghi thức rước kiệu, dâng hương, cúng tế để tưởng nhớ các vị
+                  anh hùng, liệt sỹ đã hy sinh vì đất nước. Phần hội là dịp để
+                  người dân tham gia các hoạt động vui chơi, giải trí, giao lưu
+                  văn hóa như hái đào tiên, đánh đáo cá, bắt lợn lấy thưởng,
+                  tung còn, thi bắn nỏ, chơi cờ phạ, đẩy gậy, kéo co nam nữ…
+                  Cũng trong phần hội, các dân tộc thiểu số ở Điện Biên còn biểu
+                  diễn những tiết mục nghệ thuật đặc trưng của mình như múa hát,
+                  múa sạp, múa xòe… Lễ hội Thành Bản Phủ là một sự kiện mang ý
+                  nghĩa lịch sử và văn hóa quan trọng của Điện Biên.
+                </p>
+                <figure>
+                  <img
+                    src="https://tourhot24h.vn/wp-content/uploads/2023/12/le-hoi-thanh-ban-phu-dien-bien.jpg"
+                    class="w3-container"
+                    alt="Lễ hội thành Bản Phủ"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://tourhot24h.vn/an-tuong-voi-top-10-le-hoi-dien-bien-dac-sac/"
+                      target="_blank"
+                      >tourhot24h.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark
+                  ><strong>Lễ Tủ Cải của dân tộc Dao Quần chẹt</strong></mark
+                >
+                <p>
+                  Thời gian:
+                  <u>Lễ thường được làm vào cuối năm hoặc đầu năm mới</u>
+                </p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >các bản, làng của cộng đồng người Dao Quần Chẹt ở Điện
+                    Biên</u
+                  >
+                </p>
+                <p>
+                  Lễ Tủ Cải của người Dao, một nghi lễ rất quan trọng trong đời
+                  sống tín ngưỡng và văn hóa của họ. Đây là lễ đặt tên thứ hai
+                  (tên âm) cho người con trai trong dòng tộc, để xưng hô với tổ
+                  tiên và các thần linh, vì khi cúng lễ xưng tên với tổ tiên họ
+                  kiêng dùng tên thật. Lễ thường được làm vào cuối năm hoặc đầu
+                  năm mới, khi mọi người đã thu hoạch xong vụ mùa và có thời
+                  gian nông nhàn. Lễ không có ngày cố định, mà tùy thuộc vào khả
+                  năng kinh tế của từng gia đình. Con trai phải từ 8 tuổi trở
+                  lên mới được làm lễ Tủ Cải.
+                </p>
+                <p>
+                  Lễ Tủ Cải là dấu ấn của sự trưởng thành của con trai Dao,
+                  giống như lễ thành đinh của người Kinh xưa. Người Dao tin rằng
+                  chỉ khi đã làm lễ Tủ Cải, con trai mới có đủ quyền và nghĩa vụ
+                  trong dòng họ và cộng đồng. Những người làm thầy mo cũng phải
+                  qua lễ này. Lễ Tủ Cải là một phần không thể thiếu trong văn
+                  hóa của người Dao, góp phần duy trì và phát huy những giá trị
+                  truyền thống, giáo dục thế hệ sau và tạo sự gắn bó vững chắc
+                  trong cộng đồng.
+                </p>
+                <figure>
+                  <img
+                    src="https://tourhot24h.vn/wp-content/uploads/2023/12/le-tua-cai-le-hoi-dien-bien.jpg"
+                    class="w3-container"
+                    alt="Lễ Tủ Cải"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://tourhot24h.vn/an-tuong-voi-top-10-le-hoi-dien-bien-dac-sac/"
+                      target="_blank"
+                      >tourhot24h.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội mừng măng mọc (Kin Lẩu Nó)</strong></mark>
+                <p>
+                  Thời gian:
+                  <u
+                    >Được tổ chức vào đầu mùa mưa, thường là trong khoảng tháng
+                    5 hoặc tháng 6.</u
+                  >
+                </p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >tại các bản làng của dân tộc Cống và một số cộng đồng dân
+                    tộc thiểu số ở Điện Biên</u
+                  >
+                </p>
+                <p>
+                  Lễ mừng măng mọc là một lễ hội truyền thống tươi vui của các
+                  dân tộc miền núi phía Bắc Việt Nam, như Mảng, Xinh Mun, Kháng,
+                  Phù Lá, La Hủ, Khơ Mú. Được tổ chức vào đầu mùa mưa, thường là
+                  trong khoảng tháng 5 hoặc tháng 6. Đây là dịp quan trọng để
+                  cộng đồng tận hưởng niềm vui và gửi lời cảm ơn đến thần trời
+                  và thần đất.
+                </p>
+                <p>
+                  Lễ hội diễn ra vào thời điểm những búp măng vừa nở rộ, tượng
+                  trưng cho sự khởi đầu của mùa sản xuất mới. Người dân tin rằng
+                  việc mừng măng mọc sẽ mang lại một mùa màng tốt tươi, đồng
+                  thời đảm bảo cho cuộc sống an lành và ấm no của cộng đồng. Qua
+                  lễ hội, họ thể hiện lòng biết ơn sâu sắc đến thần trời và thần
+                  đất. Nếu bạn muốn trải nghiệm không khí truyền thống độc đáo
+                  và sôi động của lễ mừng măng mọc, hãy tham gia lễ hội Điện
+                  Biên để khám phá vẻ đẹp và ý nghĩa sâu sắc của lễ hội này nhé!
+                </p>
+                <figure>
+                  <img
+                    src="https://tourhot24h.vn/wp-content/uploads/2023/12/hoi-mung-mang-moc-dien-bien.jpg"
+                    class="w3-container"
+                    alt="Lễ hội mừng măng mọc"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://tourhot24h.vn/an-tuong-voi-top-10-le-hoi-dien-bien-dac-sac/"
+                      target="_blank"
+                      >tourhot24h.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark
+                  ><strong>Lễ hội mừng mưa rơi của dân tộc Khơ Mú</strong></mark
+                >
+                <p>
+                  Thời gian:
+                  <u>
+                    cuối tháng 3, đầu tháng 4 âm lịch, tùy theo thời tiết.
+                  </u>
+                </p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Các bản làng của dân tộc Khơ Mú, huyện Mường Nhé, tỉnh Điện
+                    Biên</u
+                  >
+                </p>
+                <p>
+                  Người Khơ Mú có một lễ hội truyền thống để chào đón những cơn
+                  mưa đầu mùa, mang lại sự phồn thịnh cho nương rẫy. Lễ hội này
+                  được gọi là “om đin om đang”, nghĩa là lễ hội mừng nước. Lễ
+                  hội được tổ chức vào cuối tháng 3, đầu tháng 4 âm lịch, tùy
+                  theo thời tiết.
+                </p>
+                <p>
+                  Lễ hội bao gồm hai phần: phần lễ và phần hội. Phần lễ là nghi
+                  thức cúng tế thần linh, cầu mong mưa tốt, gió lành, sức khỏe
+                  dồi dào và tránh xa những điều xấu xa. Phần hội là những màn
+                  biểu diễn văn nghệ đặc sắc của dân tộc, trong đó có điệu múa
+                  “om đin om đang” là điệu múa chính. Lễ hội được diễn ra trên
+                  nhà sàn, với sự tham gia của tất cả mọi người trong bản.
+                </p>
+                <figure>
+                  <img
+                    src="https://tourhot24h.vn/wp-content/uploads/2023/12/le-mung-mua-roi-le-hoi-dien-bien.jpg"
+                    class="w3-container"
+                    alt="Lễ hội mừng mưa rơi"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://tourhot24h.vn/an-tuong-voi-top-10-le-hoi-dien-bien-dac-sac/"
+                      target="_blank"
+                      >tourhot24h.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ cúng bản của người Cống</strong></mark>
+                <p>Thời gian: <u>mùa tháng 3 âm lịch</u></p>
+                <p>Địa điểm: <u>khắp các bản của người Cống </u></p>
+                <p>
+                  Lễ cúng bản là một nét đẹp văn hóa truyền thống độc đáo của
+                  cộng đồng người Cống. Hàng năm, đặc biệt là vào mùa tháng 3 âm
+                  lịch, khắp các bản của người Cống đều hân hoan tổ chức “Lễ
+                  cúng bản” – một nghi thức được tổ chức trước khi vụ gieo hạt.
+                </p>
+                <p>
+                  Vào ngày lễ, từng con đường dẫn vào bản đều được trang trí bởi
+                  những cổng lớn, cùng với việc cắm dấu hiệu kiêng kỵ để không
+                  ai được vào bản. Người dân đồng lòng tuân thủ quy tắc này,
+                  đồng thời họ chắc chắn rằng không có ai được phép xâm nhập vào
+                  lễ cúng bản.
+                </p>
+                <figure>
+                  <img
+                    src="https://tourhot24h.vn/wp-content/uploads/2023/12/le-cung-ban-nguoi-cong-le-hoi-dien-bien.jpg"
+                    class="w3-container"
+                    alt="Lễ cúng bản của người Cống"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://tourhot24h.vn/an-tuong-voi-top-10-le-hoi-dien-bien-dac-sac/"
+                      target="_blank"
+                      >tourhot24h.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ mừng cơm mới dân tộc Si La </strong></mark>
+                <p>Thời gian: <u>cuối tháng 8 đến đầu tháng 9 âm lịch</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Các bản làng của người Si La, chủ yếu ở huyện Mường Nhé,
+                    tỉnh Điện Biên</u
+                  >
+                </p>
+                <p>
+                  Vào khoảng cuối tháng 8 đến đầu tháng 9 âm lịch, khi lúa đầu
+                  mùa chín vàng, người Si La tổ chức lễ mừng cơm mới để tưởng
+                  nhớ và biết ơn tổ tiên, ông bà, cha mẹ đã truyền lại cho họ
+                  những kỹ năng và kinh nghiệm sản xuất. Họ sẽ lấy những hạt lúa
+                  chín đầu tiên cho các vị tổ tiên trước khi thu hoạch toàn bộ.
+                </p>
+                <p>
+                  Lễ mừng cơm mới của người Si La là một nghi thức nông nghiệp
+                  mang nhiều giá trị văn hóa tích cực và là một phần không thể
+                  thiếu trong truyền thống của họ. Lễ kết thúc trong không khí
+                  vui tươi và ấm áp của bữa cơm liên hoan, mọi người cùng chia
+                  sẻ niềm vui về thành quả của vụ mùa bội thu và hy vọng rằng
+                  cuộc sống của họ sẽ luôn có nhiều niềm vui như vậy.
+                </p>
+                <figure>
+                  <img
+                    src="https://tourhot24h.vn/wp-content/uploads/2023/12/le-hoi-dien-bien-le-mung-mua-roi.jpg"
+                    class="w3-container"
+                    alt="Lễ mừng cơm mới dân tộc Si La"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://tourhot24h.vn/an-tuong-voi-top-10-le-hoi-dien-bien-dac-sac/"
+                      target="_blank"
+                      >tourhot24h.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ hội Hạn Khuống giao duyên</strong></mark>
+                <p>Thời gian: <u>giữa tháng 11</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Các bản làng người Thái ở huyện Tuần Giáo và huyện Điện
+                    Biên, tỉnh Điện Biên</u
+                  >
+                </p>
+                <p>
+                  Một nét đặc sắc của văn hóa lễ hội Điện Biên là lễ hội Hạn
+                  Khuống giao duyên của người Thái. Đây là một hoạt động văn hóa
+                  mang tính giải trí, giao lưu, kết bạn qua những bài hát chuyện
+                  kể trong không khí ấm áp của cộng đồng. Lễ hội được tổ chức
+                  vào giữa tháng 11, khi mùa thu chuyển mình sang đông.
+                </p>
+                <p>
+                  Địa điểm tổ chức lễ hội là một khu đất rộng và thoáng, nơi các
+                  thanh niên trong bản sẽ xây dựng một sàn cao 1,5 m, bao quanh
+                  bằng phên mắt cáo và có cửa ra vào. Lễ hội bắt đầu khi trời
+                  tối và lửa bếp đã cháy rực đỏ. Các thanh niên nam nữ đến với
+                  lễ hội để hát đối đáp, tâm sự và làm quen với nhau. Hoạt động
+                  này kéo dài cho đến khi bình minh ló dạng, rồi mọi người sẽ
+                  chia tay nhau. Đêm hôm sau, lễ hội Hạn Khuống do phái nữ tổ
+                  chức. Mục đích của đêm này là để các thanh niên nam nữ tìm
+                  hiểu thêm về nhau và chọn bạn đời cho mình.
+                </p>
+                <figure>
+                  <img
+                    src="https://tourhot24h.vn/wp-content/uploads/2023/12/le-hoi-han-khuong-dien-bien-1.jpg"
+                    class="w3-container"
+                    alt="Lễ hội Hạn Khuống giao duyên"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://tourhot24h.vn/an-tuong-voi-top-10-le-hoi-dien-bien-dac-sac/"
+                      target="_blank"
+                      >tourhot24h.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong>Lễ Bó khăn khoai</strong></mark>
+                <p>Thời gian: <u>Sau khi thu hoạch xong lúa</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Các bản làng của dân tộc Thái, chủ yếu ở huyện Điện Biên và
+                    huyện Điện Biên Đông, tỉnh Điện Biên</u
+                  >
+                </p>
+                <p>
+                  Đối với người Thái trắng, con trâu không chỉ là một loài vật
+                  nuôi, mà còn là một người bạn đồng hành trong công việc sản
+                  xuất nông nghiệp. Sau khi thu hoạch xong lúa, người Thái trắng
+                  thường tổ chức lễ Bó khoăn khoai để bày tỏ lòng biết ơn và tôn
+                  kính đối với con trâu, nhờ có sức kéo của chúng mà mùa màng
+                  được bội thu, cuộc sống được ấm no, sung túc.
+                </p>
+                <p>
+                  Con trâu là động vật quan trọng nhất đối với người Thái trắng,
+                  bởi họ là dân nông nghiệp chuyên canh tác lúa nước ở các thung
+                  lũng ven sông, suối. Người Thái trắng có câu “Người Xá ăn theo
+                  lửa, người Thái ăn theo nước”, thể hiện sự gắn bó với môi
+                  trường sống và phương thức sản xuất của họ. Người Thái trắng
+                  cũng có những kinh nghiệm và kiến thức sản xuất lúa nước khá
+                  tốt, được biểu hiện qua các tục ngữ như “làm nương ủ lá cây,
+                  làm ruộng thả nước ngập luống cày. Do đó, con trâu là yếu tố
+                  then chốt để đảm bảo sự phát triển của nền nông nghiệp của
+                  người Thái trắng.
+                </p>
+                <figure>
+                  <img
+                    src="https://tourhot24h.vn/wp-content/uploads/2023/12/le-hoi-dien-bien-le-hoi-mo-khoan-khoai.jpg"
+                    class="w3-container"
+                    alt="Lễ Bó khăn khoai"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://tourhot24h.vn/an-tuong-voi-top-10-le-hoi-dien-bien-dac-sac/"
+                      target="_blank"
+                      >tourhot24h.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="DITICH">
+        <h1 class="w3-center" style="font-size: 50px">
+          DI TÍCH, DI SẢN VĂN HOÁ
+        </h1>
+        <article>
+          <p>
+            Việc bảo tồn các Di tích lịch sử – văn hoá và danh lam thắng cảnh
+            góp phần làm giàu kho tàng di sản văn hoá tại Điện Biên, quảng bá
+            tới du khách trong và ngoài nước vẻ đẹp phong phú, đa dạng, độc đáo
+            của địa phương. Dưới đây Toplist xin giới thiệu đến bạn các di tích
+            quốc gia, tài sản vô giá tại Điện Biên.
+          </p>
+
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Một số di tích lịch sử:
+            </summary>
+            <ol>
+              <li>
+                Hang Mường Tỉnh<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/3H428aN7NbEXvEeA8"
+                  target="_blank"
+                  >Xa Dung, Điện Biên Đông District, Dien Bien, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hóa - khảo cổ.
+                <figure>
+                  <img
+                    src="https://toplist.vn/images/800px/hang-muong-tinh-1135398.jpg"
+                    class="w3-container"
+                    alt="Hang Mường Tỉnh"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://toplist.vn/top-list/di-tich-xep-hang-quoc-gia-tai-dien-bien-57939.htm"
+                      target="_blank"
+                      >toplist.vn</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Tháp Chiềng Sơ<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/iUgMFKzWDGJ5Luwq7"
+                  target="_blank"
+                  >Unnamed Road, Chiềng Sơ, Điện Biên Đông, Điện Biên,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích kiến trúc - nghệ thuật.
+                <figure>
+                  <img
+                    src="https://toplist.vn/images/800px/thap-chieng-so-1135399.jpg"
+                    class="w3-container"
+                    alt="Tháp Chiềng Sơ"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://toplist.vn/top-list/di-tich-xep-hang-quoc-gia-tai-dien-bien-57939.htm"
+                      target="_blank"
+                      >toplist.vn</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Tháp Mường Luân<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/p6nwNj5xJJzbdRSY6"
+                  target="_blank"
+                  >793F+35R, Mường Luân, Điện Biên Đông, Điện Biên, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích kiến trúc - nghệ thuật
+                <figure>
+                  <img
+                    src="https://toplist.vn/images/800px/thap-muong-luan-1135401.jpg"
+                    class="w3-container"
+                    alt="Tháp Mường Luân"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://toplist.vn/top-list/di-tich-xep-hang-quoc-gia-tai-dien-bien-57939.htm"
+                      target="_blank"
+                      >toplist.vn</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Động Pa Thơm<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/JsWE5uzn8ogi5oHB9"
+                  target="_blank"
+                  >Pa Thơm, Điện Biên District, Dien Bien, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích thiên nhiên - khảo cổ
+                <figure>
+                  <img
+                    src="https://toplist.vn/images/800px/dong-pa-thom-1135405.jpg"
+                    class="w3-container"
+                    alt="Động Pa Thơm"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://toplist.vn/top-list/di-tich-xep-hang-quoc-gia-tai-dien-bien-57939.htm"
+                      target="_blank"
+                      >toplist.vn</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Động Xá Nhè (Khó Chua La)<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/C9pdrr4UKo87fXRL6"
+                  target="_blank"
+                  >VCG7+M7M, Sáng Nhè, Tủa Chùa, Điện Biên, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích thiên nhiên - khảo cổ
+                <figure>
+                  <img
+                    src="https://toplist.vn/images/800px/dong-xa-nhe-kho-chua-la-1135409.jpg"
+                    class="w3-container"
+                    alt="Động Xá Nhè"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://toplist.vn/top-list/di-tich-xep-hang-quoc-gia-tai-dien-bien-57939.htm"
+                      target="_blank"
+                      >toplist.vn</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Hang động Pê Răng Ky<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/9Lv1Uj6EJL4Y9CAu6"
+                  target="_blank"
+                  >Huổi Só, Tủa Chùa District, Dien Bien, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích thiên nhiên - khảo cổ.
+                <figure>
+                  <img
+                    src="https://toplist.vn/images/800px/hang-dong-pe-rang-ky-1135414.jpg"
+                    class="w3-container"
+                    alt="Hang động Pê Răng Ky"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://toplist.vn/top-list/di-tich-xep-hang-quoc-gia-tai-dien-bien-57939.htm"
+                      target="_blank"
+                      >toplist.vn</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Hang Thẩm Púa<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/V1PiMkJVuGb1mDRS9"
+                  target="_blank"
+                  >Chiềng Sinh, Mường Ảng District, Dien Bien, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích thiên nhiên – khảo cổ..
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/3d0fddc5-a29b-42fe-bdff-17379c1163ec-hang-tham-puajpg.jpg"
+                    class="w3-container"
+                    alt="Hang Thẩm Púa"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/dien-bien/danh-sach-10-di-tich-lich-su-tai-dien-bien-noi-tieng"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Ngoài ra còn có các di sản văn hoá phi vật thể như:
+            </summary>
+            <ol type="1">
+              <li>
+                -Nghệ thuật Xòe Thái<br />
+                - Loại hình:Nghệ thuật trình diễn. <br />
+                <figure>
+                  <img
+                    src="https://tse3.mm.bing.net/th/id/OIP.Wik5cx_43RGSuUowGqFr0gHaER?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Nghệ thuật Xòe Thái"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://thethaovanhoa.vn/van-hoa/chieu-nay-unesco-xem-xet-dua-xoe-thai-vao-danh-sach-di-san-van-hoa-the-gioi-n20211215071435521.htm"
+                      target="_blank"
+                      >thethaovanhoa.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Nghi lễ Then<br />
+                - Loại hình:Tập quán tín ngưỡng <br />
+                <figure>
+                  <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.T6nzEYjW6fPXTBYGJYYXUwHaEu?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Nghi lễ Then"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://dulich.laodong.vn/kham-pha/nghi-le-then-va-nhung-an-chua-bieu-tuong-van-hoa-1088203.html"
+                      target="_blank"
+                      >dulich.laodong.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Nghề đan lát tre nứa Thái<br />
+                - Loại hình:Thủ công truyền thống. <br />
+                <figure>
+                  <img
+                    src="https://ongtre.com.vn/wp-content/uploads/2023/01/9845-1656215031-dan-15-1024x768.jpg"
+                    class="w3-container"
+                    alt="Nghề đan lát tre nứa Thái"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ongtre.com.vn/kham-pha-7-lang-nghe-may-tre-dan-noi-tieng-nhat-viet-nam.html"
+                      target="_blank"
+                      >ongtre.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Nghi lễ lúa mới Si La<br />
+                - Loại hình:Tập quán lễ hội. <br />
+                <figure>
+                  <img
+                    src="https://images.baodantoc.vn/uploads/2023/Thang-11/Ngay-26/Bang-Ngan/Co%20Tu/MUNG9736.jpg"
+                    class="w3-container"
+                    alt="Nghi lễ lúa mới Si La"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baodantoc.vn/doc-dao-le-an-trau-mung-lua-moi-cua-nguoi-co-tu-1700982268235.htm"
+                      target="_blank"
+                      >baodantoc.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Gạ ma thú (Hà Nhì)<br />
+                - Loại hình:Tập quán tín ngưỡng. <br />
+                <figure>
+                  <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.iHE7IJsUQwLizuQMqiyt-AHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Gạ ma thú"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://dulich.laichau.gov.vn/vi/blog/details/-le-hoi-ga-ma-thu-cua-dan-toc-ha-nhi-158"
+                      target="_blank"
+                      >dulich.laichau.gov.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội Bun Huột Nặm (Lào)<br />
+                - Loại hình:Lễ hội truyền thống. <br />
+                <figure>
+                  <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.H9V9itswZ8R9JVFVWkAUjQHaEz?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Bun Huột Nặm"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://evbn.org/le-hoi-te-nuoc-o-viet-nam-1650633944/"
+                      target="_blank"
+                      >evbn.org</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="GIAODUC">
+        <h1 class="w3-center" style="font-size: 50px">GIÁO DỤC</h1>
+        <article>
+          <h3>
+            <strong><mark>Tình hình giáo dục tỉnh Điện Biên</mark></strong>
+          </h3>
+          <p>
+            Toàn tỉnh Điện Biên có tổng cộng <u>517 trường học</u>; trong đó có
+            <u>333 trường phổ thông</u>, bao gồm: <u>176 trường tiểu học</u>,
+            <u>124 trường trung học cơ sở</u>,
+            <u>21 trường trung học phổ thông</u>,
+            <u>1 trường phổ thông cơ sở</u> và <u>1 trường trung học</u>.
+          </p>
+          <p>
+            Chất lượng giáo dục từng bước được nâng lên. Phương pháp dạy học
+            tiếp tục được đổi mới theo hướng tích cực hóa, phát huy khả năng
+            sáng tạo, hứng thú học tập, tạo điều kiện để mọi học sinh bộc lộ khả
+            năng và năng lực của bản thân. Tỷ lệ giáo viên và cán bộ quản lý
+            giáo dục, đào tạo có trình độ đạt chuẩn và trên chuẩn tăng nhanh.
+            Tuy nhiên, hoạt động giáo dục ở Điện Biên vẫn còn rất nhiều khó khăn
+            gồm <strong>cơ sở vật chất thiếu thốn</strong> và
+            <strong>đường đến trường gặp trở ngại</strong>.
+          </p>
+          <p>
+            <strong>Tỉ lệ dân số biết chữ</strong> ở Điện Biên là <u>73,1%</u>;
+            số <u>nam biết chữ nhiều hơn số nữ</u> và ở
+            <u>thành thị nhiều hơn nông thôn</u>.
+          </p>
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a href="https://vi.wikipedia.org/wiki/%C4%90i%E1%BB%87n_Bi%C3%AAn"
+              >wiki-Điện Biên</a
+            >
+            )
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="KINHTE">
+        <br />
+        <h1 class="w3-center" style="font-size: 50px">KINH TẾ</h1>
+        <article>
+          <h2 style="text-align: left">TÓM TẮT PHÁT TRIỂN KINH TẾ ĐIỆN BIÊN</h2>
+          <p>
+            <strong><mark>Khái quát chung</mark></strong>
+          </p>
+          <p>
+            Kinh tế tỉnh Điện Biên thuộc nhóm trung bình và còn gặp nhiều khó
+            khăn do địa hình đồi núi bị chia cắt mạnh, khiến nông nghiệp không
+            phải là thế mạnh. Hiện nay, tỉnh đang chú trọng phát triển công
+            nghiệp và du lịch. Trong bảng xếp hạng Chỉ số năng lực cạnh tranh
+            cấp tỉnh (PCI) năm <u>2020</u>, Điện Biên xếp thứ <u>46/63</u> tỉnh,
+            thành trong cả nước.
+          </p>
+          <p>
+            <strong><mark>Tổng sản phẩm và cơ cấu kinh tế</mark></strong>
+          </p>
+          <p>
+            Năm <u>2018</u>, Điện Biên xếp thứ <u>60</u> về tổng sản phẩm trên
+            địa bàn (GRDP) với giá trị <u>15.750 tỷ đồng</u> (tương đương
+            <u>0,684 tỷ USD</u>), xếp thứ <u>61</u> về GRDP bình quân đầu người
+            với <u>27,31 triệu đồng</u> (khoảng <u>1.186 USD</u>), và đứng thứ
+            <u>49</u> về tốc độ tăng trưởng GRDP với <u>7,15%</u>.
+          </p>
+          <p>
+            Dự ước GRDP theo giá so sánh năm <u>2016</u> đạt
+            <u>9.223,2 tỷ đồng</u>. Trong đó, khu vực nông – lâm nghiệp và thủy
+            sản tăng <u>3,56%</u>; công nghiệp – xây dựng tăng <u>6,07%</u>;
+            dịch vụ tăng <u>8,64%</u>. Cơ cấu kinh tế gồm: nông – lâm nghiệp và
+            thủy sản chiếm <u>23,77%</u>; công nghiệp – xây dựng chiếm
+            <u>25,29%</u>; dịch vụ chiếm <u>48,48%</u>. Thu nhập bình quân đầu
+            người đạt <u>22,31 triệu đồng/người/năm</u>, tăng <u>7,87%</u> so
+            với năm <u>2015</u>.
+          </p>
+          <p>
+            <strong><mark>Nông nghiệp</mark></strong>
+          </p>
+          <p>
+            Khí hậu nhiệt đới gió mùa tạo điều kiện thuận lợi cho nông nghiệp,
+            tuy nhiên các đợt rét đậm, rét hại mùa đông gây nhiều trở ngại cho
+            sản xuất. Toàn tỉnh có <u>9 trang trại</u>, gồm <u>5</u> trang trại
+            trồng trọt, <u>2</u> trang trại chăn nuôi, <u>1</u> trang trại nuôi
+            trồng thủy sản và <u>1</u> trang trại khác. Tổng sản lượng lương
+            thực ước đạt <u>253.622 tấn</u>; tổng đàn gia súc khoảng
+            <u>550.600 con</u>.
+          </p>
+          <p>
+            Năm <u>2016</u>, diện tích gieo cấy lúa đạt <u>500,98 km²</u>, năng
+            suất bình quân <u>35 tạ/ha</u>, sản lượng đạt <u>175.119 tấn</u>.
+            Diện tích gieo trồng ngô đạt <u>29.977 ha</u>, năng suất bình quân
+            <u>26,19 tạ/ha</u>, sản lượng đạt <u>78.503,44 tấn</u>. Tổng đàn
+            trâu đạt <u>129.640 con</u>, bò <u>53.564 con</u> và lợn
+            <u>374.350 con</u>, đều tăng so với năm <u>2015</u>.
+          </p>
+          <p>
+            <strong><mark>Công nghiệp</mark></strong>
+          </p>
+          <p>
+            Ngành công nghiệp của Điện Biên có một số sản phẩm tăng cao so với
+            năm <u>2015</u> như điện, gạch xây, đá xây dựng, xi măng và trang in
+            offset; trong khi một số sản phẩm như than sạch và gạch xây dựng đạt
+            mức thấp.
+          </p>
+          <p>
+            Giá trị sản xuất công nghiệp năm <u>2016</u> ước đạt
+            <u>2.235,22 tỷ đồng</u>, tăng <u>9,1%</u> so với năm <u>2015</u>.
+            Trong đó, công nghiệp khai thác đạt <u>107,97 tỷ đồng</u>; công
+            nghiệp chế biến đạt <u>1.798,94 tỷ đồng</u>; sản xuất và phân phối
+            điện đạt <u>286,79 tỷ đồng</u>, tăng mạnh <u>46,26%</u>; cung cấp
+            nước và xử lý rác thải đạt <u>41,52 tỷ đồng</u>.
+          </p>
+
+          <h2 style="text-align: center">Biểu đồ GRDP Điện Biên 2016–2022</h2>
+          <p style="text-align: center">Đơn vị: tỷ đồng / %</p>
+          <figure
+            class="w3-center chart-container"
+            style="width: 80%; margin: auto"
+          >
+            <canvas id="grdpChart"></canvas>
+            <figcaption>
+              <p>
+                <strong>Lưu ý:</strong>
+                <em
+                  >số liệu các năm trên chỉ là ước tính, dựa trên tốc độ tăng
+                  trưởng GRDP trung bình và dữ liệu năm 2016</em
+                >
+              </p>
+              <p style="font-size: 15px">
+                (nguồn thông tin:
+                <a
+                  href="https://vi.wikipedia.org/wiki/%C4%90i%E1%BB%87n_Bi%C3%AAn"
+                  target="_blank"
+                  >Wikipedia – Điện Biên</a
+                >)
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+          const ctx = document.getElementById("grdpChart").getContext("2d");
+          new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
+              datasets: [
+                {
+                  label: "GRDP Điện Biên (tỷ đồng)",
+                  data: [9223.2, 9800, 15750, 16800, 16000, 17000, 18200],
+                  backgroundColor: "#4CAF50",
+                  yAxisID: "y",
+                },
+                {
+                  label: "Tăng trưởng GRDP (%)",
+                  data: [6.5, 6.8, 7.15, 7.0, 1.5, 3.5, 7.0],
+                  backgroundColor: "#FF9800",
+                  yAxisID: "y1",
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: { position: "top" },
+                title: {
+                  display: true,
+                  text: "GRDP và Tăng trưởng kinh tế tỉnh Điện Biên (2016–2022)",
+                },
+              },
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  position: "left",
+                  title: { display: true, text: "GRDP (tỷ đồng)" },
+                },
+                y1: {
+                  beginAtZero: true,
+                  position: "right",
+                  grid: { drawOnChartArea: false },
+                  title: { display: true, text: "Tăng trưởng (%)" },
+                },
+                x: {
+                  title: { display: true, text: "Năm" },
+                },
+              },
+            },
+          });
+        </script>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="AMTHUC">
+        <h1 class="w3-center" style="font-size: 50px">ẨM THỰC</h1>
+        <h2>-Điện Biên có rất nhiều đặc sản nổi tiếng có thể kể đến như:</h2>
+        <article>
+          <ol type="1">
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Gà nướng mắc khén
+                </summary>
+                <p>
+                  Mắc khén là một loại gia vị đặc trưng có ở vùng núi Tây Bắc.
+                  Để chế biến gà nướng mắt khén, gà được đem nướng trên than
+                  củi, có lửa không quá to. Khi nướng không cần phết thêm mỡ vào
+                  gà vì mỡ gà sẽ tự chảy ra, đến khi thịt gà được săn chắc thì
+                  phết thêm gia vị mắc khén bên ngoài da gà làm món ăn thêm đậm
+                  đà, hương thơm đặc trưng.
+                </p>
+                <p>
+                  -Giá tham khảo: 20.000 - 500.000đ/phần <br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/FQ2iiktbULxtf6Tz8"
+                    >92RM+QX3, Noong Bua, Điện Biên Phủ, Điện Biên, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202111302131598003.jpg"
+                    class="w3-container"
+                    alt="Gà nướng mắc khén"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Pa pỉnh tộp
+                </summary>
+                <p>
+                  Nghe tên ban đầu có vẻ lạ tai, nhưng thực ra đây là tên gọi
+                  vùng miền của món cá nướng Điện Biên. Pa pỉnh tộp là món ăn
+                  rất quý và được trân trọng, một món ăn cổ truyền của người
+                  Thái ở vùng Tây Bắc.
+                </p>
+                <p>
+                  Nguyên liệu chính của món này không thể thiếu các loại cá suối
+                  như cá chép, cá trôi, cá trắm. Sau khi làm sạch thì mổ dọc
+                  sống lưng để dễ lật úp cá lại khi nướng. Gia vị được nhồi
+                  trong bụng cá sẽ ngấm vào thịt, làm cho thịt đậm đà, hấp dẫn.
+                </p>
+                <p>
+                  -Giá tham khảo: 110.000 đồng/1 phần <br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/dZwTKGiqJcvkUbuJ9"
+                    >92Q4+2R9, Thanh Trường, Điện Biên Phủ, Điện Biên,
+                    Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202202180926447237.jpg"
+                    class="w3-container"
+                    alt="Pa pỉnh tộp"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Vịt om hoa chuối
+                </summary>
+                <p>
+                  Vịt om hoa chuối là một món ăn dân dã, dễ chế biến của người
+                  dân bản địa. Thịt vịt sau khi làm sạch sẽ được tẩm ướp với các
+                  gia vị như: Ớt, gừng, sả, mắc khén,... sau đó gói vào lá chuối
+                  om trong khoảng 3 giờ ở lửa nhỏ cho đến khi thịt gà chín.
+                </p>
+                <p>
+                  Món ăn này tuy vẻ ngoài nhìn vào không quá bắt mắt nhưng hương
+                  thơm ngào ngạt ngay từ khi mở lớp lá chuối ra sẽ khiến bạn
+                  ngay lập tức muốn thưởng thức.
+                </p>
+                <p>
+                  -Giá tham khảo: ~120.000 VNĐ đến ~200.000 VNĐ / phần<br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/puG436h3KKTER77h9"
+                    >Thanh Trường, Dien Bien Phu, Dien Bien, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202202180928304176.jpg"
+                    class="w3-container"
+                    alt="Vịt om hoa chuối"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Thịt lợn xay hấp lá chuối
+                </summary>
+                <p>
+                  Thêm một món đặc sản được chế biến rất đơn giản, không chút
+                  cầu kỳ đến từ Điện Biên đó là thịt lợn xay hấp lá chuối.<br />
+                  Nghe tên thôi là bạn cũng đã có thể hình dung được món ăn này
+                  được làm từ lợn xay nhuyễn ướp với các gia vị rồi gói chặt
+                  trong lớp lá chuối, đem đi chưng cách thủy khoảng 1 giờ cho
+                  chín là ăn được. Tuy đơn giản nhưng khi ăn bạn sẽ mê mẩn cái
+                  mùi thơm của thịt hòa quyện với mùi thơm của lá chuối, phần
+                  thịt thì mềm và béo, dính chặt vào nhau rất lạ miệng.
+                </p>
+                <p>
+                  -Giá tham khảo: 50.000 – 120.000 VNĐ / phần<br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/xHqXQw8enN4XnRSR9"
+                    >Số 236 tổ 1, Phường Mường Thanh, Điện Biên Phủ, Điện Biên,
+                    Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202202180952472254.jpg"
+                    class="w3-container"
+                    alt="Thịt lợn xay hấp lá chuối"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Canh bon
+                </summary>
+                <p>
+                  Cuối cùng trong danh sách này là món canh bon dân dã của đồng
+                  bào người Thái. Món canh này thực chất được làm từ da bò hoặc
+                  da trâu kết hợp với cây bon (cây khoai nước), cà dại, rau thơm
+                  và các gia vị nấu thành.
+                </p>
+                <p>
+                  Thưởng thức món ăn này bạn mới thấy được những điều đặc biệt,
+                  da trâu, da bò dai giòn quyện với vị hơi đắng của cà, vị thơm
+                  của mắc khén và ấm nóng của sả kết hợp với nhau tạo thành một
+                  món ăn đặc sản không nơi đâu có được.
+                </p>
+                <p>
+                  -Giá tham khảo: ~50.000 – 100.000 VNĐ / phần<br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/2WDFp3JEt3E1uhyQA"
+                    >92C4+Q7J, Bản Pa Pe, h. Điện Biên, Điện Biên, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202202180954390442.jpg"
+                    class="w3-container"
+                    alt="Canh bon"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Chẩm chéo
+                </summary>
+                <p>
+                  Chẩm chéo là một món nước chấm phổ biến trong các món ăn của
+                  người Thái ở Tây Bắc. Chẩm chéo được tạo nên bởi nguyên liệu
+                  chính là quả mắc khén. Sau khi quả mắc khén được làm sạch thì
+                  rang cho giòn rồi giã nhuyễn, sau đó trộn với ớt khô, sả,
+                  muối, rau mùi tạo nên một hỗn hợp các hương vị hòa quyện đặc
+                  trưng.<br />
+                  Chẩm chéo được dùng để làm nước chấm ăn kèm với các món như:
+                  Bắp cải cuốn nhót xanh, thịt trâu gác bếp, thịt nướng, xôi,…
+                </p>
+                <p>
+                  -Giá tham khảo: ~28 000 ₫/hủ 250g<br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/LDewtoG7fpm1Qsqj7"
+                    >Mường Thanh, Dien Bien Phu, Dien Bien, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202111302132378883.jpg"
+                    class="w3-container"
+                    alt="Chẩm chéo"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Xôi nếp nương
+                </summary>
+                <p>
+                  Nếp nương là loại nếp nổi tiếng ở vùng Tây Bắc, nhưng để
+                  thưởng thức được nếp nương ngon thì không thể bỏ qua nếp nương
+                  Điện Biên. Bởi những hạt nếp ở đây căng tròn, khi nấu lên có
+                  vị ngọt, rất thơm và mềm dẻo so với những loại nếp khác.
+                </p>
+                <p>
+                  Để nấu được một chỏ xôi nếp nương hoàn hảo đòi hỏi người nấu
+                  phải dành nhiều công sức, sự kỳ công thì thành phẩm mới không
+                  bị sượng, nở đều và thơm. Khi ăn bạn có thể cho thêm ít muối
+                  mè hoặc dùng với các món mặn đều ngon.
+                </p>
+                <p>
+                  -Giá tham khảo: ~60.000 – 120.000 ₫ / suất<br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/7bnfJaq5hduTdDQ99"
+                    >Thanh Trường, Dien Bien Phu, Dien Bien, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202202181023338118.jpg"
+                    class="w3-container"
+                    alt="Xôi nếp nương"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Xôi chim
+                </summary>
+                <p>
+                  Xôi chim là một món ăn dân dã thường được xuất hiện trong các
+                  dịp lễ, tết của người dân Điện Biên.<br />
+                  Xôi chim đặc biệt ở chỗ là khi ăn bạn sẽ cảm nhận được sự dẻo
+                  thơm của hạt nếp nương nổi tiếng của vùng Tây Bắc kết hợp với
+                  thịt chim ngói có nhiều thịt, mùi thơm và thịt chắc hơn các
+                  loài chim khác.
+                </p>
+                <p>
+                  -Giá tham khảo: ~40.000 – 80.000 VNĐ / suất<br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/JtGBYo3kPuRnJ4pP6"
+                    >3 7 Tháng 5, Phường Mường Thanh, Điện Biên Phủ, Điện Biên,
+                    Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202111302134100333.jpg"
+                    class="w3-container"
+                    alt="Xôi chim"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Bắp cải cuốn nhót xanh
+                </summary>
+                <p>
+                  Bắp cải cuốn nhót xanh là một món ăn đơn giản làm nên đặc
+                  trưng của người Điện Biên. Để thưởng thức món ăn này, bắt buộc
+                  phải có những quả nhót xanh không quá non cũng không quá già,
+                  bắp cải luộc cuốn trái nhót, rau mùi bên trong, rồi chấm vào
+                  chén chẩm chéo.<br />
+                  Khi ăn bạn sẽ cảm nhận được vị chua đến từ trái nhót với chút
+                  cay cay của chẩm chéo tạo nên hương vị khó quên.
+                </p>
+                <p>
+                  -Giá tham khảo: ~30.000 – 120.000 VNĐ / phần<br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/fZHtZLjHWEPuHYMn6"
+                    >Thanh Trường, Dien Bien Phu, Dien Bien, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202202181024583698.jpg"
+                    class="w3-container"
+                    alt="Bắp cải cuốn nhót xanh"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Măng đắng
+                </summary>
+                <p>
+                  Một trong những đặc sản không thể kể đến đó là măng đắng, được
+                  nhiều người chọn mua về làm quà và khó mà quên được cái vị
+                  đắng của nó khi ăn.<br />
+                  Măng đắng Điện Biên được dùng chế biến thành các món ăn quen
+                  thuộc như: luộc, xào, hầm xương, nộm,...Thêm vào đó, một món
+                  ăn đặc biệt mà bạn nên thử qua là măng đắng luộc hay nướng
+                  dùng với chẩm chéo cũng rất ngon, hấp dẫn.
+                </p>
+                <p>
+                  -Giá tham khảo: 10.000 -12.000đ/kg<br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/BqnDH2iGqD8vSHDq9"
+                    >28GP+VRV, ĐT129, Tả Sìn Thàng, Tủa Chùa, Điện Biên,
+                    Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202111302134261773.jpg"
+                    class="w3-container"
+                    alt="Măng đắng"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Rêu đá
+                </summary>
+                <p>
+                  Một món ăn độc lạ được lấy từ rêu của những con suối có nước
+                  trong ở vùng Tây Bắc, để chế biến thành các món như: rêu hấp,
+                  rêu nướng, canh rêu, nộm rêu,...trong số đó rêu nướng là món
+                  ngon nhất, được nhiều người thưởng thức.<br />
+                  Người ta dùng rêu non trộn với các gia vị như: hạt dổi, hạt
+                  mắc khén, ớt, tỏi, gừng,... rồi gói trong lá chuối hay lá
+                  dong. Sau đó kẹp vào thanh nẹp tre để nướng.<br />
+                  Rêu đá được xem như là một bài thuốc quý có tác dụng lưu thông
+                  khí huyết, giải nhiệt, giải độc và điều trị cao huyết áp.
+                </p>
+                <p>
+                  -Giá tham khảo: 60.000 – 120.000 VNĐ / phần (tùy lượng và cách
+                  nêm).<br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/SWvrazvWVme1GML8A"
+                    >64 Hoàng Văn Thái, Phường Mường Thanh, Điện Biên Phủ, Điện
+                    Biên, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202111302136214043.jpg"
+                    class="w3-container"
+                    alt="Rêu đá"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Sâu chít
+                </summary>
+                <p>
+                  Sâu chít là một loại côn trùng sống lâu năm trong thân của cây
+                  chít, có giá trị dinh dưỡng rất cao nên là một đặc sản quý
+                  giá.<br />
+                  Những con sâu chít bên ngoài có màu trắng sữa, căng mọng,
+                  người ta thường hay bắt chúng để ngâm rượu, vì với cách này sẽ
+                  giữ được nhiều dinh dưỡng, không bị biến chất. Ngoài cách ngâm
+                  rượu, sâu chít có thể dùng để phơi khô, chế biến thành các món
+                  ăn rất hấp dẫn và bổ dưỡng.
+                </p>
+                <p>
+                  -Giá tham khảo: Sâu chit tươi theo bỏ (100 cây chít): Khoảng
+                  100.000đ/1 bó, sâu chít tươi đã bóc sẵn: Khoảng
+                  1.400.000đ/1kg.<br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/h9MEmQZidaqPwHeS9"
+                    >28GP+VRV, ĐT129, Tả Sìn Thàng, Tủa Chùa, Điện Biên,
+                    Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202111302137050783.jpg"
+                    class="w3-container"
+                    alt="Sâu chít"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Chè tuyết Tủa Chùa
+                </summary>
+                <p>
+                  Chè tuyết Tủa Chùa hay còn gọi là Chè Shan Tuyết (Tuyết Shan)
+                  khi pha có hương thơm đặc trưng, màu nước vàng óng, khi thưởng
+                  thức đọng lại ở đầu lưỡi là vị chát cùng với vị đắng, ngọt hòa
+                  quyện đậm đà tạo nên thương hiệu chè Tuyết Shan đặc trưng.
+                </p>
+                <p>
+                  -Giá tham khảo: 950.000đ/kg.<br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/TPCp2wRAfFuNokXc9"
+                    >679 Đ. Võ Nguyên Giáp, Tân Thanh, Điện Biên Phủ, Điện Biên
+                    38000, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202202181036568515.jpg"
+                    class="w3-container"
+                    alt="Chè tuyết Tủa Chùa"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Bánh khẩu xén
+                </summary>
+                <p>
+                  Khẩu xén là loại bánh truyền thống của đồng bào người Thái,
+                  được chế biến từ gạo nếp và sắn tươi là loại sắn nạc chỉ có ở
+                  Điện Biên.<br />
+                  Bánh khẩu xén ngoài màu trắng ra còn có thêm những màu sắc
+                  khác, do dùng thêm màu từ trái gấc, nếp cẩm. Bánh mỏng, giòn
+                  khi nhìn thấy khá giống bánh phồng tôm như ăn vào thì lại cảm
+                  nhận được độ dai và chắc hơn.
+                </p>
+                <p>
+                  -Giá tham khảo: ~30.000 – 75.000₫ /500g<br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/TPCp2wRAfFuNokXc9"
+                    >679 Đ. Võ Nguyên Giáp, Tân Thanh, Điện Biên Phủ, Điện Biên
+                    38000, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202202181002578323.jpg"
+                    class="w3-container"
+                    alt="Bánh khẩu xén"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Gạo Điện Biên
+                </summary>
+                <p>
+                  Nhờ có điều kiện gieo trồng vô cùng thuận lợi, Điện Biên là
+                  vùng đất cung cấp nhiều giống gạo đặc sản nổi tiếng thơm ngon.
+                  Gạo Điện Biên đã nổi danh khắp tứ phương và trở thành một loại
+                  đặc sản của vùng núi Tây Bắc. Với hạt gạo mẩy, thon dài, màu
+                  trắng sữa khi nấu lên thường săn chắc, dẻo thơm vô cùng.
+                </p>
+                <p>
+                  -Giá tham khảo: 30.000 - 35.000đ/1kg <br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/TrRi3A1H8W2s5UZP6"
+                    >679 Đ. Võ Nguyên Giáp, Tân Thanh, Điện Biên Phủ, Điện Biên
+                    38000, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202202181021459576.jpg"
+                    class="w3-container"
+                    alt="Gạo Điện Biên"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Thịt trâu gác bếp
+                </summary>
+                <p>
+                  Nói đến thịt trâu gác bếp có lẽ chúng ta đã từng nghe đâu đó
+                  trên các phương tiện truyền thông, cách làm này của người Thái
+                  Đen giúp cho thịt trâu được giữ lâu hơn.
+                </p>
+                <p>
+                  Các miếng thịt trâu sau khi được tẩm ướp gia vị thì được treo
+                  lên hun trên gác bếp, một thời gian sau chúng sẽ săn lại. Khi
+                  ăn, bạn chỉ cần nướng sơ qua trên than hồng để làm cho thịt
+                  mềm. Bạn sẽ cảm nhận được vị ngọt của thịt trâu, đượm trong sự
+                  đậm đà của các gia vị cùng mùi hương đặc trưng khi ăn món ăn
+                  này.
+                </p>
+                <p>
+                  -Giá tham khảo: 800.000 - 1.000.000 đồng/1 kg. <br />
+                  -Địa chỉ thưởng thức:
+                  <a href="https://maps.app.goo.gl/coVscvHfmS4TSxbz8"
+                    >6 Trần Đăng Ninh, Mường Thanh, Điện Biên Phủ, Điện Biên,
+                    Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/11/30/1401540/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-202111302131164423.jpg"
+                    class="w3-container"
+                    alt="Thịt trâu gác bếp"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.bachhoaxanh.com/kinh-nghiem-hay/15-dac-san-dien-bien-tuy-la-nhung-ngon-nuc-mui-rat-dang-de-thu-1401540"
+                      target="_blank"
+                      >bachhoaxanh.com</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="DULICH">
+        <h1 class="w3-center" style="font-size: 50px">DU LỊCH</h1>
+        <h2>-Đà Nẵng (Điện Biên) có những điểm du lịch nổi tiếng như:</h2>
+        <article>
+          <ol type="1">
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Bảo tàng chiến thắng lịch sử Điện Biên Phủ
+                </summary>
+                <p class="detail-content">
+                  Nói về những điểm du lịch Điện Biên nổi tiếng nhất thì không
+                  thể bỏ qua Bảo tàng chiến thắng lịch sử Điện Biên Phủ – nơi
+                  lưu giữ và tái hiện lại những trang sử vẻ vang của quân và dân
+                  ta. Bảo tàng được xây dựng vào năm 2012 với tổng diện tích lên
+                  tới 2.200m2. Sau hai năm thi công khu bảo tàng chính thức khai
+                  trương đón khách vào năm 2014.
+                </p>
+                <p class="detail-content">
+                  Ghé thăm bảo tàng bạn sẽ được tận mắt chiêm ngưỡng những hiện
+                  vật, tranh ảnh có giá trị về chiến thắng lịch sử Điện Biên Phủ
+                  “lừng lắc năm châu, chấn động địa cầu”. Qua đó thêm yêu, tự
+                  hào và biết ơn trước sự hy sinh to lớn của ông cha vì nền hòa
+                  bình, độc lập của dân tộc.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-1.jpg"
+                    class="w3-container"
+                    alt="Bảo tàng chiến thắng lịch sử Điện Biên Phủ"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Đồi A1
+                </summary>
+                <p class="detail-content">
+                  Là một di tích quan trọng nằm trong Khu di tích lịch sử Điện
+                  Biên Phủ, Đồi A1 giờ đây đã trở thành chứng nhân lịch sử. Đây
+                  cũng là một điểm đến được nhiều công ty du lịch khai thác đưa
+                  vào chương trình tour Điện Biên.<br />
+                  Đồi A1 có độ cao trung bình khoảng 490m nằm dọc theo hướng Tây
+                  Bắc – Đông Nam. Năm xưa nơi đây là căn cứ điểm quan trọng nhất
+                  của chiến dịch.<br />
+                  Hiện nay nơi đây có đặt một tấm phù điêu hình quốc huy cùng
+                  một mô hình xe tăng nặng tới 19 tấn để du khách chiêm ngưỡng
+                  và chụp hình check-in.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-3.jpeg"
+                    class="w3-container"
+                    alt="Đồi A1"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Hầm Đờ Cát
+                </summary>
+                <p class="detail-content">
+                  Du lịch Điện Biên Phủ chắc hẳn bạn sẽ không bỏ lỡ cơ hội đến
+                  thăm quan di tích Hầm Đờ Cát. Đây là căn cứ chỉ huy của thực
+                  dân Pháp được vào quanh bởi những bao cát, hàng thép gai và 4
+                  chiếc xe tăng cỡ lớn.
+                </p>
+                <p class="detail-content">
+                  Hầm Đờ Cát nằm ngay khu vực trung tâm của chào lửa Điện Biên.
+                  Khi xưa các chiến sĩ của ta đã cắm lá cờ đỏ sao vàng trên nóc
+                  hầm đánh dấu chiến dịch Điện Biên Phủ hoàn toàn thắng lợi.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-4.jpeg"
+                    class="w3-container"
+                    alt="Hầm Đờ Cát"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Đền thờ Hoàng Công Chất
+                </summary>
+                <p class="detail-content">
+                  Điểm du lịch Điện Biên tiếp theo mà bạn có thể sắp xếp thời
+                  gian đến tham quan là Đền thờ Hoàng Công Chất nằm tại Thành
+                  Bản Phủ. Ông là người đã công lại lãnh đạo nhân dân trong cuộc
+                  chiến để giải phóng vùng đất Điện Biên – Mường Thanh khỏi sự
+                  chiếm đóng của giặc.<br />
+                  Ngày nay, đến thăm khu đền thờ, du khách có dịp chiêm ngưỡng
+                  nét kiến trúc độc đáo với những đường nét chạm khắc tinh xảo.
+                  Bên trong đền đặt ban thờ uy nghi. Khói hương nghi ngút quanh
+                  năm.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-5.jpeg"
+                    class="w3-container"
+                    alt="Đền thờ Hoàng Công Chất"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Thành Bản Phủ
+                </summary>
+                <p class="detail-content">
+                  Thành Bản Phủ hay còn được biết đến với tên gọi thành Chiềng
+                  Lê là một thành cổ được xây dựng bằng đất đá, lũy tre với diện
+                  tích lên đến 80 mẫu. Đây là địa điểm thường xuyên xuất hiện
+                  trong chương trình tham quan du lịch Điện Biên 3 ngày 2 đêm
+                  của các đơn vị lữ hành.<br />
+                  Khu thành cổ được xây dựng gắn liền với sự thịnh vượng của gia
+                  tộc họ Hoàng. Hiện nay còn sót lại dấu tích của cổng thành và
+                  nền móng của các bức tường đắp đất.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-6.jpeg"
+                    class="w3-container"
+                    alt="Thành Bản Phủ"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Thị xã Mường Lay
+                </summary>
+                <p class="detail-content">
+                  Thị xã Mường Lay từ lâu đã trở thành 1 điểm đến cực kỳ hấp dẫn
+                  du khách khi đi du lịch Điện Biên. Nơi đây sơn hữu cảnh quan
+                  thiên nhiên hoang sơ của núi rừng Tây Bắc, vẻ đẹp hoang dại
+                  nhưng không kém phần trữ tình của dòng sông Đà.
+                </p>
+                <p class="detail-content">
+                  Không chỉ có sức hút mãnh liệt về thiên nhiên, Mường Lay còn
+                  được mệnh danh là thủ phủ của người Thái trắng. Đặt chân đến
+                  vùng đất này bạn sẽ có cơ hội tìm hiểu nét văn hóa truyền
+                  thống và nhịp sống thường ngày của người Thái nơi vùng cao Tây
+                  Bắc.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-7.jpeg"
+                    class="w3-container"
+                    alt="Thị xã Mường Lay"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  A Pa Chải
+                </summary>
+                <p class="detail-content">
+                  Du lịch Điện Biên mà chưa ghé thăm đỉnh A Pa Chải thì quả là
+                  một điều đáng tiếc. Nơi đây được xem là cực Tây của Việt Nam
+                  nơi tiếp giáp với cả Lào và Trung Quốc.
+                </p>
+                <p class="detail-content">
+                  Tại A Pa Chải có đặt cột mốc biên giới chung giữa 3 quốc gia.
+                  Check- in địa điểm này bạn có dịp ngắm nhìn vẻ đẹp thiên nhiên
+                  núi rừng từ trên cao, hít thở bầu không khí trong lành cũng
+                  như trào dâng cảm giác tự hào khi đặt chân đến 1 trong 4 điểm
+                  cực của tổ quốc.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-8.jpeg"
+                    class="w3-container"
+                    alt="A Pa Chải"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Cánh đồng Mường Thanh
+                </summary>
+                <p class="detail-content">
+                  Cánh đồng Mường Thanh là một trong những địa điểm du lịch Điện
+                  Biên nổi tiếng nhất. Cánh đồng rộng lớn nằm ở độ cao khoảng
+                  chừng 400m so với mực nước biển và trảo dài tới hơn 20km. Nó
+                  được xem là 1 trong tứ đại cánh đồng của vùng núi phía Bắc ứng
+                  với câu ca dao “Nhất Thanh, Nhì Lò, Tam Than, Tứ Tấc.”
+                </p>
+                <p class="detail-content">
+                  Du lịch cánh đồng Mường Thanh vào vụ lúa chín, du khách sẽ
+                  không khỏi ngỡ ngàng trước sắc vàng rực, óng ả, chạy dài tới
+                  tận chân trời. Giữa thiên nhiên hoang sơ, bình yên, thả vài
+                  dáng đơn giản là bạn đã có ngay cho mình chức bức hình sống
+                  động.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-9.jpeg"
+                    class="w3-container"
+                    alt="Cánh đồng Mường Thanh"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Bản Che Căn
+                </summary>
+                <p class="detail-content">
+                  Du lịch cộng đồng ngày càng trở thành xu hướng được nhiều
+                  người ưa chuộng. Nắm bắt được điều đó ở Điện Biên đã có nhiều
+                  bản làng được đầu tư phục vụ du lịch và Che Căn là một ví dụ
+                  điển hình.
+                </p>
+                <p class="detail-content">
+                  Đi tour Điện Biên 3 ngày 2 đêm, du khách thường lựa chọn Bản
+                  Che Căn làm điểm dừng chân. Nơi đây là địa bàn sinh sống của
+                  người Thái đen với những nét văn hóa vô cùng đặc sắc. Du khách
+                  có dịp tận hưởng thiên nhiên, khám phá cuộc sống của bà con
+                  cũng như thưởng thức các món đặc sản Tây Bắc hấp dẫn.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-10.jpeg"
+                    class="w3-container"
+                    alt="Bản Che Căn"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Cao nguyên đá Tủa Chùa
+                </summary>
+                <p class="detail-content">
+                  Thêm một điểm du lịch Điện Biên độc đáo nữa mà Tico Travel mới
+                  cùng bạn khám phá là Cao nguyên đá Tủa Chùa. Nơi đây sở hữu
+                  cho mình vẻ đẹp hoang sơ, kỳ thú được tạo nên từ những ngọn
+                  núi đá vôi trùng điệp.
+                </p>
+                <p class="detail-content">
+                  Đi phượt lên Tủa Chùa bạn sẽ phải “mắt chữ O miệng chữ A”
+                  trước sự hùng vĩ của đồi núi trập trùng, phủ xanh bởi những
+                  rừng cây. Địa danh này cũng có những hang động quyến rũ được
+                  hình thành cách đây hàng triệu năm. Du lịch Tủa Chùa bạn thỏa
+                  thích chinh phục tự nhiên, check – in sống ảo cũng như
+                  “refresh” lại tâm hồn.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-11.jpeg"
+                    class="w3-container"
+                    alt="Cao nguyên đá Tủa Chùa"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Đèo Pha Đin
+                </summary>
+                <p class="detail-content">
+                  Được mệnh danh là một trong tứ đại đỉnh đèo Tây Bắc, Đèo Pha
+                  Đin thôi thúc ý chí và bước chân của những lưu khách phương xa
+                  muốn chinh phục thiên nhiên kỳ thú và thử thách sức chịu đựng
+                  của bản thân.
+                </p>
+                <p class="detail-content">
+                  Đây là địa điểm mà bất cứ tín đồ du lịch Điện Biên nào cũng
+                  mong muốn một lần được đặt chân tới. Con đèo uốn lượn ngoằn
+                  ngoèo qua những sườn núi với độ dài hơn 32km. Đứng giữa đèo
+                  Pha Đin ngắm nhìn đất trời hùng vĩ chắc chắn sẽ là một trải
+                  nghiệm mà bạn không thể nào quên.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-12.jpeg"
+                    class="w3-container"
+                    alt="Đèo Pha Đin"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Hồ Pá Khoang
+                </summary>
+                <p class="detail-content">
+                  Nếu bạn muốn tìm kiếm một điểm du lịch Điện Biên với vẻ đẹp
+                  nên thơ, trữ tình thì hãy đến ngay Khu du lịch Hồ Pá Khoang.
+                  Đây là một hồ nước lớn, nằm yên bình giữa núi rừng hùng vĩ.
+                </p>
+                <p class="detail-content">
+                  Đến với khu du lịch, du khách không chỉ có cơ hội thả hồn mình
+                  theo con nước mà còn được tham gia nhiều hoạt động vui chơi –
+                  giải trí đặc sắc như chèo thuyền ngắm cảnh, check – in, câu ác
+                  và chế biến ẩm thực.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-13.jpeg"
+                    class="w3-container"
+                    alt="Hồ Pá Khoang"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Đảo Hoa Anh Đào
+                </summary>
+                <p class="detail-content">
+                  Đảo Hoa Anh Đào là điểm check – in mới nổi ở Điện Biên trong
+                  vài năm trở lại đây nhưng đã nhanh chóng thu hút sự chú ý của
+                  du khách gần xa. Nơi này là một đảo nhỏ nằm giữa lòng Hồ Pá
+                  Khoang với khung cảnh yên bình, đẹp tựa như một bức họa.
+                </p>
+                <p class="detail-content">
+                  Điểm du lịch Điện Biên này hiện đang trồng hơn 600 gốc cây hoa
+                  anh đào. Cứ mỗi độ xuân về, rừng hoa anh đào lại bung nở sắc
+                  hồng đẹp mê mẩn lòng người. Du khách đến đây thỏa sức nhìn
+                  ngắm cũng như chụp cho mình những tấm hình tuyệt đẹp với sắc
+                  hoa anh đào.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-14.jpeg"
+                    class="w3-container"
+                    alt="Đảo Hoa Anh Đào"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Khu bảo tồn thiên nhiên Mường Nhé
+                </summary>
+                <p class="detail-content">
+                  Khu bảo tồn thiên nhiên Mường Nhé là địa điểm khám phá tự
+                  nhiên mà những tín đồ trekking không thể nào bỏ qua trong hành
+                  trình du lịch Điện Biên 3 ngày 2 đêm.
+                </p>
+                <p class="detail-content">
+                  Địa điểm thú vị này rộng hơn 45.500ha với hệ sinh thái rừng
+                  trên núi cao vô cùng đa dạng. Đến với khu bảo tồn bạn có thể
+                  men theo những con đường mòn, băng rừng, lội suối để chiêm
+                  ngưỡng vẻ đẹp hoang sơ, kỳ thú của thiên nhiên Tây Bắc.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-15.jpeg"
+                    class="w3-container"
+                    alt="Khu bảo tồn thiên nhiên Mường Nhé"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Suối nước nóng U Va
+                </summary>
+                <p class="detail-content">
+                  Theo kinh nghiệm du lịch Điện Biên của nhiều du khách thì
+                  ngoài việc thăm thú thiên nhiên và các di tích lịch sử thì bạn
+                  cũng có thể thư giãn, vui chơi tại Suối nước nóng U Va.
+                </p>
+                <p class="detail-content">
+                  Suối nước nóng U Va nằm cách thành phố Điện Biên phủ chừng
+                  15km. Nơi đây có khu suối khoáng nóng tự nhiên với nhiệt động
+                  khoảng trên 60 độ C. Bạn có thể tự do ngâm mình trong làn nước
+                  suối nóng để thư giãn, bổ sung các khoáng chất cần thiết cho
+                  cơ thể.
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2023/07/du-lich-dien-bien-16.jpeg"
+                    class="w3-container"
+                    alt="Suối nước nóng U Va"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-dien-bien/"
+                      target="_blank"
+                      >ticotravel.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="tiemnang">
+        <h1 class="w3-center" style="font-size: 50px">TIỀM NĂNG PHÁT TRIỂN</h1>
+        <article style="font-size: 20px; line-height: 1.7">
+          <p>
+            <mark><strong>Quy hoạch và định hướng phát triển</strong></mark
+            ><br />
+            Điện Biên được định hướng phát triển theo mô hình
+            <u>4</u> trục động lực – <u>3</u> vùng kinh tế – <u>4</u> cực tăng
+            trưởng, trong đó trục kinh tế dọc theo Quốc lộ <u>12</u> đóng vai
+            trò chủ đạo, kết nối nội tỉnh và mở rộng giao thương với Lào.
+          </p>
+
+          <p>
+            <mark><strong>Lợi thế cạnh tranh</strong></mark
+            ><br />
+            Tỉnh có vị trí địa lý chiến lược gần biên giới, tài nguyên thiên
+            nhiên phong phú, di sản lịch sử – văn hóa đặc sắc cùng nguồn nhân
+            lực trẻ, tạo nền tảng vững chắc cho phát triển kinh tế lâu dài.
+          </p>
+
+          <p>
+            <mark><strong>Định hướng phát triển bền vững</strong></mark
+            ><br />
+            Điện Biên tập trung cân bằng giữa tăng trưởng kinh tế và bảo vệ môi
+            trường, ưu tiên phát triển nông nghiệp hiện đại, du lịch sinh thái
+            và các ngành công nghiệp thân thiện với môi trường.
+          </p>
+
+          <p>
+            <mark><strong>Triển vọng tương lai</strong></mark
+            ><br />
+            Với chính sách phát triển phù hợp, sự đầu tư của Nhà nước và việc
+            giữ ổn định cơ cấu hành chính, Điện Biên được kỳ vọng trở thành một
+            trong những tỉnh phát triển nhanh của khu vực Tây Bắc, góp phần nâng
+            cao đời sống người dân.
+          </p>
+          <p style="font-size: 15px" class="w3-center">
+            (Nguồn thông tin:
+            <a
+              href="https://diaoctot.com/tinh-thanh/tinh-dien-bien-sau-sap-nhap-2025/"
+              target="_blank"
+              >diaoctot.com</a
+            >)
+          </p>
+        </article>
+      </section>
+      <hr />
+    </main>
+
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>HẾT!</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("navMenu");
+        if (navMenu) {
+          navMenu.classList.toggle("w3-hide");
+        }
+      }
+    </script>
+  </body>
+</html>
